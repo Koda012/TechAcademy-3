@@ -96,7 +96,7 @@
     </nav>
 
     <main>
-        <h1>Título</h1>
+        <h1>YOU ARE THE JUDGE NOW</h1>
     </main>
     <script src="src/javascript/script.js"></script>
 </body>
