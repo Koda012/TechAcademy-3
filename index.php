@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,13 @@
     <link rel="shortcut icon" href="src/images/logo.png" type="image/x-icon">
     <title>Judge NOW</title>
 </head>
+
 <body>
     <nav id="sidebar">
         <div id="sidebar_content">
             <div id="user">
                 <img src="src/images/logo.png" id="user_avatar" alt="Avatar">
-    
+
                 <p id="user_infos">
                     <span class="item-description">
                         Fulano de Tal
@@ -23,7 +25,7 @@
                     </span>
                 </p>
             </div>
-    
+
             <ul id="side_items">
                 <li class="side-item active">
                     <a href="#">
@@ -33,7 +35,7 @@
                         </span>
                     </a>
                 </li>
-    
+
                 <li class="side-item">
                     <a href="#">
                         <i class="fa-solid fa-user"></i>
@@ -42,7 +44,7 @@
                         </span>
                     </a>
                 </li>
-    
+
                 <li class="side-item">
                     <a href="#">
                         <i class="fa-solid fa-bell"></i>
@@ -51,7 +53,7 @@
                         </span>
                     </a>
                 </li>
-    
+
                 <li class="side-item">
                     <a href="#">
                         <i class="fa-solid fa-box"></i>
@@ -60,7 +62,7 @@
                         </span>
                     </a>
                 </li>
-    
+
                 <li class="side-item">
                     <a href="#">
                         <i class="fa-solid fa-image"></i>
@@ -69,7 +71,7 @@
                         </span>
                     </a>
                 </li>
-    
+
                 <li class="side-item">
                     <a href="#">
                         <i class="fa-solid fa-gear"></i>
@@ -79,7 +81,7 @@
                     </a>
                 </li>
             </ul>
-    
+
             <button id="open_btn">
                 <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
             </button>
@@ -97,7 +99,30 @@
 
     <main>
         <h1>YOU ARE THE JUDGE NOW</h1>
+
+
+        <main>
+            <?php
+            //imprimir o conteudo do array do GET
+            //print_r($_GET);
+
+            //recuperar a variavel pagina
+            $pagina = $_GET["pagina"] ?? "home";
+
+            // paginas/home.php
+            $pagina = "paginas/{$pagina}.php";
+
+            //verificar se o arquivo existe
+            if (file_exists($pagina)) {
+                include $pagina;
+            } else {
+                include "paginas/erro.php";
+            }
+
+            ?>
+        </main>
     </main>
     <script src="src/javascript/script.js"></script>
 </body>
+
 </html>
