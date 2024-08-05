@@ -4,87 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="src/css/styles.css">
     <link rel="shortcut icon" href="src/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/styles.css">
     <title>Judge NOW</title>
 </head>
 
 <body>
     <nav id="sidebar">
-        <div id="sidebar_content">
-            <div id="user">
-                <img src="src/images/logo.png" id="user_avatar" alt="Avatar">
-
-                <p id="user_infos">
+        <ul id="side_items">
+            <li class="side-item active">
+                <a href="#">
+                    <i class="fa-solid fa-chart-line"></i>
                     <span class="item-description">
-                        Fulano de Tal
+                        Dashboard
                     </span>
+                </a>
+            </li>
+
+            <li class="side-item">
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
                     <span class="item-description">
-                        Lorem Ipsum
+                        Usuários
                     </span>
-                </p>
-            </div>
+                </a>
+            </li>
 
-            <ul id="side_items">
-                <li class="side-item active">
-                    <a href="#">
-                        <i class="fa-solid fa-chart-line"></i>
-                        <span class="item-description">
-                            Dashboard
-                        </span>
-                    </a>
-                </li>
+            <li class="side-item">
+                <a href="#">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="item-description">
+                        Notificações
+                    </span>
+                </a>
+            </li>
 
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-user"></i>
-                        <span class="item-description">
-                            Usuários
-                        </span>
-                    </a>
-                </li>
+            <li class="side-item">
+                <a href="#">
+                    <i class="fa-solid fa-box"></i>
+                    <span class="item-description">
+                        Produtos
+                    </span>
+                </a>
+            </li>
 
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-bell"></i>
-                        <span class="item-description">
-                            Notificações
-                        </span>
-                    </a>
-                </li>
+            <li class="side-item">
+                <a href="#">
+                    <i class="fa-solid fa-image"></i>
+                    <span class="item-description">
+                        Imagens
+                    </span>
+                </a>
+            </li>
 
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-box"></i>
-                        <span class="item-description">
-                            Produtos
-                        </span>
-                    </a>
-                </li>
+            <li class="side-item">
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="item-description">
+                        Configurações
+                    </span>
+                </a>
+            </li>
+        </ul>
 
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-image"></i>
-                        <span class="item-description">
-                            Imagens
-                        </span>
-                    </a>
-                </li>
-
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-gear"></i>
-                        <span class="item-description">
-                            Configurações
-                        </span>
-                    </a>
-                </li>
-            </ul>
-
-            <button id="open_btn">
-                <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
-            </button>
+        <button id="open_btn">
+            <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+        </button>
         </div>
 
         <div id="logout">
@@ -122,7 +110,10 @@
             ?>
         </main>
     </main>
+
+
     <script src="src/javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
