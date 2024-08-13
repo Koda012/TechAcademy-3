@@ -19,7 +19,7 @@
                 <a href="#">
                     <i class="fa-solid fa-chart-line"></i>
                     <span class="item-description">
-                        Dashboard
+                        Home
                     </span>
                 </a>
             </li>
