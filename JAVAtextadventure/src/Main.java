@@ -21,51 +21,39 @@ public class Main {
                     " como juiz escolha o'que deseja fazer\n");
 
             System.out.println("Opção 1\n" +
-                    "Contatar policial\n" +
-                    "\n" +
-                    "Return: No local do crime a vítima foi encontrada com um 6 facadas na região do peito, e ao perguntar aos suspeitos Maria a única a confessar diz ter sido João.\n");
+                    "Contatar policial\n");
 
             System.out.println("Opção 2\n" +
                     "\n" +
                     "Ouvir Réu João\n" +
-                    "\n" +
-                    "Return: João nervoso diz “seu juiz armaro pra mim num é possive, eu escutei os grito na otra casa e fui correno ajuda, chegueime la e o caba tava mortim”\n");
+                    "\n" );
 
             System.out.println("Opção 3\n" +
                     "Ouvir Réu Carlos\n" +
-                    "\n" +
-                    "Return: Carlos diz normalmente diz “Foi o joão, ele algumas horas atrás havia brigado com o meu irmão o Luiz Felipe, e foi para a casa e matou o meu irmão, não contente de esfaquear ele, ele queria atirar em nós”\n");
+                    "\n" );
 
             System.out.println("Opção 4\n" +
-                    "Ouvir Réu Carlos\n" +
-                    "\n" +
-                    "Return: Carlos diz normalmente diz “Foi o joão, ele algumas horas atrás havia brigado com o meu irmão o Luiz Felipe, e foi para a casa e matou o meu irmão, não contente de esfaquear ele, ele queria atirar em nós”\n");
-
-
-            System.out.println("1 - Opção 1\n" +
-                    "Declarar João, Carlos e Maria culpados.\n");
-            System.out.println("2 - Opção 2\n" +
-                    "Declarar João culpado.\n");
-            System.out.println("3 - Opção 3\n" +
-                    "Declarar Carlos e Maria culpados.\n");
-            System.out.println("4 - Opção 4\n" +
-                    "Declarar João e Maria culpados.\n");
-            System.out.print("Digite o número da opção desejada: ");
+                    "Ouvir Réu Maria\n" +
+                    "\n" );
 
             escolha = scanner.nextInt();
 
             switch (escolha) {
                 case 1:
-                    System.out.println("Você escolheu a Opção 1.");
+                    System.out.println("No local do crime a vítima foi encontrada com um 6 facadas na região do peito, e ao perguntar aos suspeitos Maria a única a confessar diz ter sido João.");
                     
                     break;
                 case 2:
-                    System.out.println("Você escolheu a Opção 2.");
+                    System.out.println("João nervoso diz “seu juiz armaro pra mim num é possive, eu escutei os grito na otra casa e fui correno ajuda, chegueime la e o caba tava mortim”");
 
                     break;
                 case 3:
-                    System.out.println("Você escolheu a Opção 3.");
+                    System.out.println("Carlos diz normalmente diz “Foi o joão, ele algumas horas atrás havia brigado com o meu irmão o Luiz Felipe, e foi para a casa e matou o meu irmão, não contente de esfaquear ele, ele queria atirar em nós”");
 
+                    break;
+                case 4:
+                System.out.println("Maria desesperada diz “Foi ele, foi ele, além de atirar no meu cunhado ele queria nos esfaquear” e assim começa a chorar desesperada");
+    
                     break;
                 default:
                     System.out.println("Opção inválida. Por favor, escolha 1, 2 ou 3.");
