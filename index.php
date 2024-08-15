@@ -70,9 +70,10 @@
             </li>
         </ul>
 
-        <button id="open_btn">
+        <!-- <button id="open_btn">
             <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
-        </button>
+        </button> -->
+
         </div>
 
         <div id="logout">
@@ -85,30 +86,35 @@
         </div>
     </nav>
 
+    <div class="header-login">
+        <header>
+            <div>
+                <img class="logo-header" src="img/logo.png" alt="Judge Now" title="Judge Now">
+                <button class="btn login-btn">Login</button>
+                <button class="btn register-btn">Registrar</button>
+            </div>
+        </header>
+    </div>
+
     <main>
-        <h1>YOU ARE THE JUDGE NOW</h1>
+        <?php
+        //imprimir o conteudo do array do GET
+        //print_r($_GET);
 
+        //recuperar a variavel pagina
+        $pagina = $_GET["pagina"] ?? "home";
 
-        <main>
-            <?php
-            //imprimir o conteudo do array do GET
-            //print_r($_GET);
+        // paginas/home.php
+        $pagina = "paginas/{$pagina}.php";
 
-            //recuperar a variavel pagina
-            $pagina = $_GET["pagina"] ?? "home";
+        //verificar se o arquivo existe
+        if (file_exists($pagina)) {
+            include $pagina;
+        } else {
+            include "paginas/erro.php";
+        }
 
-            // paginas/home.php
-            $pagina = "paginas/{$pagina}.php";
-
-            //verificar se o arquivo existe
-            if (file_exists($pagina)) {
-                include $pagina;
-            } else {
-                include "paginas/erro.php";
-            }
-
-            ?>
-        </main>
+        ?>
     </main>
 
 
