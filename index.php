@@ -15,38 +15,29 @@
 <body>
     <nav id="sidebar">
         <ul id="side_items">
-            <li class="side-item active">
+            <li class="side-item active" title="Página principal">
                 <a href="#">
-                    <i class="fa-solid fa-chart-line"></i>
+                    <i class="fa-solid fa-house"></i>
                     <span class="item-description">
                         Home
                     </span>
                 </a>
             </li>
 
-            <li class="side-item">
+            <li class="side-item" title="Membros">
                 <a href="#">
-                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-person"></i>
                     <span class="item-description">
-                        Usuários
+                        Membros
                     </span>
                 </a>
             </li>
 
-            <li class="side-item">
+            <li class="side-item" title="Documentação do Jogo">
                 <a href="#">
-                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-folder"></i>
                     <span class="item-description">
-                        Notificações
-                    </span>
-                </a>
-            </li>
-
-            <li class="side-item">
-                <a href="#">
-                    <i class="fa-solid fa-box"></i>
-                    <span class="item-description">
-                        Produtos
+                        Documentação Jogo
                     </span>
                 </a>
             </li>
@@ -87,13 +78,11 @@
     </nav>
 
     <div class="header-login">
-        <header>
-            <div>
-                <img class="logo-header" src="img/logo.png" alt="Judge Now" title="Judge Now">
-                <button class="btn login-btn">Login</button>
-                <button class="btn register-btn">Registrar</button>
-            </div>
-        </header>
+        <div>
+            <img class="logo-header" src="img/logo.png" alt="Judge Now" title="Judge Now">
+            <button class="btn login-btn">Login</button>
+            <button class="btn register-btn">Registrar</button>
+        </div>
     </div>
 
     <main>
