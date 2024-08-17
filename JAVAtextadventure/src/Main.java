@@ -271,8 +271,7 @@ public class Main {
                 //
                 //    
                 case 2:
-                    System.out.println("João nervoso diz: seu juiz armaro pra mim num é possive, eu escutei os grito na otra casa e fui correno ajuda, chegueime la e o caba tava mortim");
-                                      
+                    System.out.println("João nervoso diz: seu juiz armaro pra mim num é possive, eu escutei os grito na otra casa e fui correno ajuda, chegueime la e o caba tava mortim");              
                         int  escolhaJ;
                         do {    
                                 System.out.println ("\n");
@@ -281,19 +280,191 @@ public class Main {
                                 escolhaJ = scanner.nextInt();
                                         
                                 switch (escolhaJ) { 
-                                case 1: System.out.println("Opção 1\n" +
+                                case 1:{ System.out.println("Opção 1\n" +
                                                         "\n" +
                                                         "No local do crime a vítima foi encontrada com um 6 facadas na região do peito, e ao perguntar aos suspeitos Maria a única a confessar diz ter sido João.”\"\n" +
                                                         "\n" );
-                                                        break;
-                                case 2: System.out.println("Opção 2\n" +
-                                                        "Carlos diz normalmente diz: Foi o joão, ele algumas horas atrás havia brigado com o meu irmão o Luiz Felipe, e foi para a casa e matou o meu irmão, não contente de esfaquear ele, ele queria atirar em nós\n" +
+                                                        int  escolhaJP;
+                                                        do {    
+                                                        System.out.println ("\n");
+                                                        System.out.println ("O que deseja fazer agora?");
+                                                        System.out.println ("2 - Ouvir Policial"+"\n"+"3 - Ouvir réu Maria"+"\n" +"4 - Ouvir réu Carlos");
+                                                                    escolhaJP = scanner.nextInt();
+                                                                                
+                                                                                switch (escolhaJP) { 
+        
+                                                                                case 3:{ System.out.println("Opção 3\n" +
+                                                                                                "Maria brava diz: VOCÊ MATOU ELE E AINDA TEM CORAGEM DE DIZER QUE NÃO SEU DESGRAÇADO!!!!!!!!!\n" +
+                                                                                                "\n" ); 
+                                                                                                int  escolhaPjm;
+                                                                                                do {    
+                                                                                                System.out.println ("\n");
+                                                                                                System.out.println ("O que deseja fazer agora?");
+                                                                                                System.out.println ("3 - Ouvir réu joão"+"\n" +"4 - Ouvir réu Carlos");
+                                                                                                escolhaPjm = scanner.nextInt();
+                                                                                                        
+                                                                                                switch (escolhaPjm) { 
+                                                                                                        
+                                                                                                        case 3: System.out.println("Opção 3\n" +
+                                                                                                                        "João diz bravo diz: não fui eu dotor, aqueles desgraçadus taõ me acusando, mas não havia feito nada dimais, E ESSA DESGRAÇADA INSISTE\n" +
+                                                                                                                        "\n" ); 
+                                                                                                                        break;
+                                                                                                        case 4: System.out.println("Opção 4\n" +
+                                                                                                                        "Carlos diz normalmente diz: Foi o joão, ele algumas horas atrás havia brigado com o meu irmão o Luiz Felipe, e foi para a casa e matou o meu irmão, não contente de esfaquear ele, ele queria atirar em nós\n" +
+                                                                                                                        "\n" );
+                                                                                                                        break;
+                                                                                                        default: System.out.println("Opação invalida. escolher de 3 ou 4" );
+                                                                                                                        break;
+                                                                                                        }    }    while (escolhaPjm < 3 || escolhaPjm > 4);   
+                                                                                                                        break;
+                                                                                                                    } 
+                                                                                case 4:{ System.out.println("Opção 4\n" +
+                                                                                                "Carlos diz normalmente diz: Ele não tem coragem de mentir, e ainda se comporta como um alucinado imbecil\n" +
+                                                                                                "\n" );
+                                                                                                int  escolhaJpc;
+                                                                                                do {    
+                                                                                                System.out.println ("\n");
+                                                                                                System.out.println ("O que deseja fazer agora?");
+                                                                                                System.out.println ("3 - Ouvir réu Maria"+"\n" +"4 - Ouvir réu Carlos");
+                                                                                                escolhaJpc = scanner.nextInt();
+                                                                                
+                                                                                                switch (escolhaJpc) { 
+                                                                                
+                                                                                                        case 3: System.out.println("Opção 3\n" +
+                                                                                                                        "Maria desesperada diz: Foi ele, foi ele, seu MENTIROSO, ALÉM DE ESFAQUEAR MEU CUNHADO ELE QUERIA ATIRAR EM NÓS. e começa a chorar desesperada\n" +
+                                                                                                                        "\n" ); 
+                                                                                                                        break;
+                                                                                                        case 4: System.out.println("Opção 4\n" +
+                                                                                                                        "Carlos diz normalmente diz: Foi o joão, ele algumas horas atrás havia brigado com o meu irmão o Luiz Felipe, e foi para a casa e matou o meu irmão, não contente de esfaquear ele, ele queria atirar em nós\n" +
+                                                                                                                        "\n" );
+                                                                                                                        break;
+                                                                                                        default: System.out.println("Opação invalida. escolher de 3 ou 4" );
+                                                                                                                        break;
+                                                                                                        }    }    while (escolhaJpc < 3 || escolhaJpc > 4);   
+                                                                                                                        break;
+                                                                                                                    } 
+                                                                                default: System.out.println("Opação invalida. escolher de 3 ou 4" );
+                                                                                                break;
+                                                                                }    }    while (escolhaJP < 3 || escolhaJP > 4);   
+                                                                                                break;
+                                                                                            }
+                                case 2: {System.out.println("Opção 2\n" +
+                                                        "Carlos diz normalmente diz: Foi o joão, ele algumas horas atrás havia brigado com o meu irmão o Luiz Felipe, e foi para a casa e matou o meu irmão, não contente de esfaquear ele, ele queria atirar em nós, seu mentiroso maldito, eu amava meu irmão\n" +
                                                         "\n" );
-                                                        break;
-                                case 3: System.out.println("Opção 3\n" +
+                                                        int  escolhaJC;
+                                                        do {    
+                                                        System.out.println ("\n");
+                                                        System.out.println ("O que deseja fazer agora?");
+                                                        System.out.println ("2 - Ouvir Policial"+"\n"+"3 - Ouvir réu Maria"+"\n" +"4 - Ouvir réu João");
+                                                                    escolhaJC = scanner.nextInt();
+                                                                                
+                                                                                switch (escolhaJC) { 
+                                                                                
+                                                                                case 2:{ System.out.println("Opção 2\n" +
+                                                                                                "No local do crime a vítima foi encontrada com um 6 facadas na região do peito, e ao perguntar aos suspeitos Maria a única a confessar diz ter sido João.\n" +
+                                                                                                "\n" ); 
+                                                                                                int  escolhaJcp;
+                                                                                                do {    
+                                                                                                System.out.println ("\n");
+                                                                                                System.out.println ("O que deseja fazer agora?");
+                                                                                                System.out.println ("3 - Ouvir réu Maria"+"\n" +"4 - Ouvir réu João");
+                                                                                                escolhaJcp = scanner.nextInt();
+                                                                                
+                                                                                                switch (escolhaJcp) { 
+                                                                                
+                                                                                                        case 3: System.out.println("Opção 3\n" +
+                                                                                                                        "Maria desesperada diz: Foi ele, foi ele, seu MENTIROSO, ALÉM DE ESFAQUEAR MEU CUNHADO ELE QUERIA ATIRAR EM NÓS. e começa a chorar desesperada\n" +
+                                                                                                                        "\n" ); 
+                                                                                                                        break;
+                                                                                                        case 4: System.out.println("Opção 4\n" +
+                                                                                                                        "João diz bravo diz: não fui eu dotor, aqueles desgraçadus taõ me acusando, mas não havia feito nada dimais, E ESSA DESGRAÇADA INSISTE\n" +
+                                                                                                                        "\n" );
+                                                                                                                        break;
+                                                                                                        default: System.out.println("Opação invalida. escolher de 3 ou 4" );
+                                                                                                                        break;
+                                                                                                        }    }    while (escolhaJcp < 3 || escolhaJcp > 4);   
+                                                                                                                        break;
+                                                                                                                    }     
+                                                                                case 3:{ System.out.println("Opção 3\n" +
+                                                                                                "Maria brava diz: VOCÊ JOÃO, VOCÊ MATOU ELE E AINDA TEM CORAGEM DE DIZER QUE FOMOS NÓS SEU DESGRAÇADO!!!!!!!!!\n" +
+                                                                                                "\n" ); 
+                                                                                                int  escolhaJcm;
+                                                                                                do {    
+                                                                                                System.out.println ("\n");
+                                                                                                System.out.println ("O que deseja fazer agora?");
+                                                                                                System.out.println ("3 - Ouvir réu Maria"+"\n" +"4 - Ouvir réu João");
+                                                                                                escolhaJcm = scanner.nextInt();
+                                                                                
+                                                                                                switch (escolhaJcm) { 
+                                                                                
+                                                                                                        case 3: System.out.println("Opção 3\n" +
+                                                                                                                        "Maria desesperada diz: Foi ele, foi ele, seu MENTIROSO, ALÉM DE ATIRAR MEU CUNHADO ELE QUERIA ATIRAR EM NÓS. e começa a chorar desesperada\n" +
+                                                                                                                        "\n" ); 
+                                                                                                                        break;
+                                                                                                        case 4: System.out.println("Opção 4\n" +
+                                                                                                                        "João diz bravo diz: não fui eu dotor, aqueles desgraçadus taõ me acusando, mas não havia feito nada dimais, E ESSE DESGRAÇADO INSISTE\n" +
+                                                                                                                        "\n" );
+                                                                                                                        break;
+                                                                                                        default: System.out.println("Opação invalida. escolher de 3 ou 4" );
+                                                                                                                        break;
+                                                                                                        }    }    while (escolhaJcm < 3 || escolhaJcm > 4);   
+                                                                                                                        break;
+                                                                                                                    }
+                                                                                case 4: {System.out.println("Opção 4\n" +
+                                                                                                "João diz Nervoso diz diz: Ele não tem corage de menti, seu dresgaçadu maldito\n" +
+                                                                                                "\n" );
+                                                                                                int  escolhaJcj;
+                                                                                                do {    
+                                                                                                System.out.println ("\n");
+                                                                                                System.out.println ("O que deseja fazer agora?");
+                                                                                                System.out.println ("1 - Ouvir réu Maria"+"\n");
+                                                                                                escolhaJcj = scanner.nextInt();
+                                                                                
+                                                                                                switch (escolhaJcj) { 
+                                                                                
+                                                                                                        case 1: System.out.println("Opção 1\n" +
+                                                                                                                        "Maria desesperada diz: Foi ele, foi ele, seu MENTIROSO, ALÉM DE ATIRAR MEU CUNHADO ELE QUERIA ATIRAR EM NÓS. e começa a chorar desesperada\n" +
+                                                                                                                        "\n" ); 
+                                                                                                                        break;
+                                                                                                        
+                                                                                                        default: System.out.println("Opação invalida. escolher de 3 ou 4" );
+                                                                                                                        break;
+                                                                                                        }    }    while (escolhaJcj >= 1);   
+                                                                                                                        break;
+                                                                                                                    }
+                                                                                default: System.out.println("Opação invalida. escolher de 3 ou 4" );
+                                                                                                break;
+                                                                                }    }    while (escolhaJC < 2 || escolhaJC > 4);   
+                                                                                                break;
+                                                                                            }
+                                case 3: {System.out.println("Opção 3\n" +
                                                         "Maria desesperada diz: Foi ele, foi ele, além de atirar no meu cunhado ele queria nos esfaquear. e começa a chorar desesperada\n" +
                                                         "\n" );
-                                                        break;
+                                                        int  escolhaJM;
+                                                        do {    
+                                                        System.out.println ("\n");
+                                                        System.out.println ("O que deseja fazer agora?");
+                                                        System.out.println ("2 - Ouvir Policial"+"3 - Ouvir réu Maria"+"\n" +"4 - Ouvir réu João");
+                                                                    escolhaJM = scanner.nextInt();
+                                                                                
+                                                                                switch (escolhaJM) { 
+                                                                                case 2: System.out.println("Opção 2\n" +
+                                                                                                "No local do crime a vítima foi encontrada com um 6 facadas na região do peito, e ao perguntar aos suspeitos Maria a única a confessar diz ter sido João.\n" +
+                                                                                                "\n" ); 
+                                                                                                break;
+                                                                                case 3: System.out.println("Opção 3\n" +
+                                                                                                "Maria brava diz: VOCÊ JOÃO, VOCÊ MATOU ELE E AINDA TEM CORAGEM DE DIZER QUE FOMOS NÓS SEU DESGRAÇADO!!!!!!!!!\n" +
+                                                                                                "\n" ); 
+                                                                                                break;
+                                                                                case 4: System.out.println("Opção 4\n" +
+                                                                                                "João diz Nervoso diz diz: Ele não tem corage de menti, seu dresgaçadu maldito\n" +
+                                                                                                "\n" );
+                                                                                                break;
+                                                                                default: System.out.println("Opação invalida. escolher de 3 ou 4" );
+                                                                                                break;
+                                                                                }    }    while (escolhaJM < 2 || escolhaJM > 4);   
+                                                                                                break;
+                                                                                            }
                                 default: System.out.println("Opação invalida. escolher de 1, 2 e 3" );
                                                         break;                
                                                    
@@ -314,14 +485,34 @@ public class Main {
                                 System.out.println ("\n");
                                 System.out.println ("O que deseja fazer agora?");
                                 System.out.println ("1 - Ouvir os policiais"+"\n" +"2 - Ouvir réu João"+"\n" +"3 - Ouvir réu Maria");
-                                escolhaC = scanner.nextInt();
-                                        
+                                escolhaC = scanner.nextInt();  
                                 switch (escolhaC) { 
                                 case 1: System.out.println("Opção 1\n" +
                                                         "\n" +
                                                         "No local do crime a vítima foi encontrada com um 6 facadas na região do peito, e ao perguntar aos suspeitos Maria a única a confessar diz ter sido João.”\"\n" +
                                                         "\n" );
-                                                        break;
+                                                        int  escolhaCp;
+                                                        do {    
+                                                        System.out.println ("\n");
+                                                        System.out.println ("O que deseja fazer agora?");
+                                                        System.out.println ("3 - Ouvir réu Maria"+"\n" +"4 - Ouvir réu João");
+                                                                    escolhaCp = scanner.nextInt();
+                                                                                
+                                                                                switch (escolhaCp) { 
+                                                                                
+                                                                                case 3: System.out.println("Opção 3\n" +
+                                                                                                "Maria brava diz: VOCÊ MATOU ELE E AINDA TEM CORAGEM DE DIZER ISSO SEU DESGRAÇADO!!!!!!!!!\n" +
+                                                                                                "\n" ); 
+                                                                                                break;
+                                                                                case 4: System.out.println("Opção 4\n" +
+                                                                                                "Carlos diz normalmente diz: Ele não tem coragem de mentir, e ainda se comporta como um alucinado imbecil\n" +
+                                                                                                "\n" );
+                                                                                                break;
+                                                                                default: System.out.println("Opação invalida. escolher de 3 ou 4" );
+                                                                                                break;
+                                                                                }    }    while (escolhaCp < 3 || escolhaCp > 4);   
+                                                                                                break;
+                                                            
                                 case 2: System.out.println("Opção 2\n" +
                                                         "João bravo diz: seu juiz ele está mentindo, MENTIROSO, EU ESCUTEI OS GRITOS E FUI AJUDAR CORRENO, QUANDU CHEGUEI ELE JÁ TAVA MORTIM\n" +
                                                         "\n" );
@@ -357,7 +548,32 @@ public class Main {
                                                         "\n" +
                                                         "No local do crime a vítima foi encontrada com um 6 facadas na região do peito, e ao perguntar aos suspeitos Maria a única a confessar diz ter sido João.”\"\n" +
                                                         "\n" );
-                                                        break;
+                                                        { System.out.println("Opção 1\n" +
+                                                        "\n" +
+                                                        "No local do crime a vítima foi encontrada com um 6 facadas na região do peito, e ao perguntar aos suspeitos Maria a única a confessar diz ter sido João.”\"\n" +
+                                                        "\n" );
+                                                        int  escolhaMp;
+                                                        do {    
+                                                        System.out.println ("\n");
+                                                        System.out.println ("O que deseja fazer agora?");
+                                                        System.out.println ("3 - Ouvir réu Maria"+"\n" +"4 - Ouvir réu Carlos");
+                                                                    escolhaMp = scanner.nextInt();
+                                                                                
+                                                                                switch (escolhaMp) { 
+                                                                                
+                                                                                case 3: System.out.println("Opção 3\n" +
+                                                                                                "Maria brava diz: VOCÊ MATOU ELE E AINDA TEM CORAGEM DE DIZER ISSO SEU DESGRAÇADO!!!!!!!!!\n" +
+                                                                                                "\n" ); 
+                                                                                                break;
+                                                                                case 4: System.out.println("Opção 4\n" +
+                                                                                                "Carlos diz normalmente diz: Ele não tem coragem de mentir, e ainda se comporta como um alucinado imbecil\n" +
+                                                                                                "\n" );
+                                                                                                break;
+                                                                                default: System.out.println("Opação invalida. escolher de 3 ou 4" );
+                                                                                                break;
+                                                                                }    }    while (escolhaMp < 3 || escolhaMp > 4);   
+                                                                                                break;
+                                                                                            }
                                 case 2: System.out.println("Opção 2\n" +
                                                         "Carlos diz normalmente diz: Foi o joão, ele algumas horas atrás havia brigado com o meu irmão o Luiz Felipe, e foi para a casa e matou o meu irmão, não contente de esfaquear ele, ele queria atirar em nós\n" +
                                                         "\n" );
