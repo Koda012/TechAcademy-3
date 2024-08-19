@@ -8,8 +8,6 @@
 }
 
 body {
-    display: flex;
-    min-height: 100vh;
     background-color: #EBC79E;
 }
 
@@ -58,4 +56,45 @@ body {
 .sidebar a:hover {
     background-color: #5C4033;
     color: white;
+}
+
+.div-login, .div-registro{
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.form-login, .form-registro {
+    background-color: #97694F;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center; /* Para centralizar o conteúdo dentro do quadrado */
+    border: 4px solid #5C4033;;
+    padding: 60px;
+    margin-top: 160px;
+    margin-left: 700px;
+    margin-right: 700px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    color: #ccc;
+    h2{
+        margin-bottom: 40px;
+    }
+    #email, #password, #nome, #telefone{
+        margin-bottom: 24px;
+        border-radius: 4px;
+        padding: 4px;
+    }
+    .botao-entrar, .botao-registrar{
+        margin: 24px;
+       padding: 10px;
+       background-color: #006600;
+       color: #ccc;
+       cursor: pointer;
+       font-size: 16px;
+       border-radius: 8px;
+       border: none;
+    }
 }

@@ -29,6 +29,44 @@
         <a href="#">Contato</a>
     </div>
 
+    <div class="div-login">
+        <div class="form-login">
+            <h2><strong>Login</strong></h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required maxlength="50" placeholder="Digite seu Email:">
+                <br>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required placeholder="Digite sua senha:">
+                <br>
+                <input class="botao-entrar" type="submit" value="Entrar">
+            </form>
+        </div>
+    </div>
+
+    <div class="div-registro">
+        <div class="form-registro">
+            <h2><strong>Registra-se</strong></h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required maxlength="50" placeholder="Digite seu Email:">
+                <br>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required placeholder="Digite sua senha:">
+                <br>
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(__) _ ____ - ____">
+                <br>
+                <label for="nome">Endereço:</label>
+                <input type="text" name="nome" id="nome" placeholder="Seu endereço:" required>
+                <br>
+                <input class="botao-registrar" type="submit" value="Registrar">
+            </form>
+        </div>
+    </div>
     
     <main>
         <?php
@@ -52,6 +90,15 @@
     </main>
 
 
+    <script>
+        document.querySelector('.btn-login').addEventListener('click', function() {
+            document.querySelector('.div-login').style.display = 'block'; 
+        });
+
+        document.querySelector('.btn-register').addEventListener('click', function() {
+            document.querySelector('.div-registro').style.display = 'block'; 
+        });
+    </script>
     <script src="src/javascript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
