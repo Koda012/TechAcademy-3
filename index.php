@@ -49,14 +49,26 @@
             <h2><strong>Registra-se</strong></h2>
             <form>
                 <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo">
                 <br>
                 <label for="email">Email:</label>
-                <input type="email" id="email" required maxlength="50" placeholder="Digite seu Email:">
+                <input type="email" id="email" maxlength="50" placeholder="Digite seu Email:">
                 <br>
                 <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required placeholder="Digite sua senha:">
+                <input type="password" id="password" name="password" placeholder="Digite sua senha:">
                 <br>
+                <p>Ou criei uma aleatória</p>
+                <br>
+                <p><span>Tamanho <span id="valor"></span> caracteres</span></p>
+                <input id="slider" class="slider" type="range" min="5" max="25" value="15" />
+                <button id="button" class="botao-senha" onclick="generatePassword()">Gerar senha</button></p>
+
+                <div id="container-password" onclick="copyPassword()" class="container-password hide">
+                    <span class="title">Sua senha gerada foi:</span>
+                    <span id="password" class="password"></span>
+                    <span class="tooltip">Clique na senha para copiar. 👆</span>
+                </div>
+
                 <label for="telefone">Telefone</label>
                 <input type="tel" name="telefone" id="telefone" placeholder="(__) _ ____ - ____">
                 <br>
@@ -64,6 +76,7 @@
                 <input type="text" name="nome" id="nome" placeholder="Seu endereço:" required>
                 <br>
                 <input class="botao-registrar" type="submit" value="Registrar">
+                <br>
             </form>
         </div>
     </div>
@@ -90,6 +103,8 @@
     </main>
 
 
+
+    <script src="javascript/script.js"></script>
     <script>
         document.querySelector('.btn-login').addEventListener('click', function() {
             document.querySelector('.div-login').style.display = 'block'; 
