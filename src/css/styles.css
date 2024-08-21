@@ -42,6 +42,14 @@ body {
     box-sizing: border-box;
     border-right: 4px solid #5C4033;
     z-index: 100;
+    h2{
+        color: white;
+    }
+    .img-sidebar img{
+        width: 80px;
+        margin: 50px;
+        margin-top: 600px;
+    }
 }
 
 .sidebar a {
@@ -81,6 +89,7 @@ body {
     color: #ccc;
     h2{
         margin-bottom: 40px;
+        color: white;
     }
     #email, #password, #nome, #telefone{
         margin-bottom: 24px;
@@ -96,6 +105,45 @@ body {
        font-size: 16px;
        border-radius: 8px;
        border: none;
+    }
+}
+
+
+.div-membros {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 220px;
+    .membros {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+
+        .img-membros img {
+            width: 180px;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: 0.5s;
+            border: 2px solid #313131
+        }
+        .img-membros img:hover, .icons-membros i:hover{
+            transform: scale(1.1);
+        }
+
+        .text-membros {
+            background-color: #5C4033;
+            color: #ccc;
+            border-radius: 40px;
+            cursor: pointer;
+            border: 2px solid #313131
+        }
+        .icons-membros{
+            display: flex;
+            gap: 8px;
+            padding: 4px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
     }
 }
 

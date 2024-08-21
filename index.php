@@ -24,9 +24,13 @@
     <div class="sidebar">
         <h2>Judge NOW</h2>
         <a href="#">Home</a>
-        <a href="#">Membros</a>
+        <a href="index.php?pagina=membros">Membros</a>
         <a href="#">Documentação do jogo</a>
         <a href="#">Contato</a>
+
+        <div class="img-sidebar">
+            <img src="img/logo.png" alt="Judge NOW" title="Judge NOW">
+        </div>
     </div>
 
     <div class="div-login">
