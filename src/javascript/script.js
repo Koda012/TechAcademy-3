@@ -1,45 +1,32 @@
-document.querySelector('.btn-login').addEventListener('click', function () {
-    document.querySelector('.div-login').style.display = 'block';
-});
 
-document.querySelector('.btn-register').addEventListener('click', function () {
-    document.querySelector('.div-registro').style.display = 'block';
-});
+const indexes = document.querySelectorAll('.indexes li');
+const tabs = document.querySelectorAll('.tab');
+const contents = document.querySelectorAll('.tab-content');
 
-
-
-let sliderElement = document.querySelector("#slider");
-let buttonElement = document.querySelector("#button");
-
-let sizePassword = document.querySelector("#valor");
-let password = document.querySelector("#password");
-
-let containerPassword = document.querySelector("#container-password");
-
-let charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!';
-let novaSenha = '';
-
-sizePassword.innerHTML = sliderElement.value;
-
-slider.oninput = function() {
-  sizePassword.innerHTML = this.value;
-}
-
-
-function generatePassword(){
-
-  let pass = '';
-  for(let i = 0, n = charset.length; i < sliderElement.value; ++i){
-    pass += charset.charAt(Math.floor(Math.random() * n));
+function reset() {
+  for (let i = 0; i < tabs.length; i++) {
+    indexes[i].style.borderColor = 'transparent';
+    tabs[i].style.zIndex = 0;
+    tabs[i].classList.remove('active');
+    contents[i].classList.remove('active');
   }
-  
-  console.log(pass)
-  containerPassword.classList.remove("hide");
-  password.innerHTML = pass;
-  novaSenha = pass;
 }
 
-function copyPassword(){
-  alert("Senha copiada com sucesso!")
-  navigator.clipboard.writeText(novaSenha);
+function showTab(i) {
+  indexes[i].style.borderColor = 'rgba(211,38,38,0.6)';
+  tabs[i].style.opacity = 1;
+  tabs[i].style.zIndex = 5;
+  tabs[i].classList.add('active');
+  contents[i].classList.add('active');
 }
+
+function activate(e) {
+  if (!e.target.matches('.indexes li')) return;
+  reset();
+  showTab(e.target.dataset.index);
+}
+
+const init = () => showTab(0);
+
+window.addEventListener('load',init,false);
+window.addEventListener('click',activate,false);
