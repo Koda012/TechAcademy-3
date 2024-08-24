@@ -1,191 +1,176 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
+:root {
+    --primary: rgb(211,38,38);
+    --overlay: rgba(211,38,38,0.6);
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background-color: #EBC79E;
-}
-
-
-.header{
-    display: flex;
-    justify-content: flex-end;
-    gap: 8px;
-    margin: 8px;
-    .btn-login{
-        background-color: #006600;
-        color: #ccc;
-        font-size: 16px;
-    }
-    .btn-register{
-        background-color: #990000;       
-        color: #ccc;
-        font-size: 16px;
-    }
-}
-
-
-.sidebar {
-    position: fixed; /* Fixa a sidebar na tela */
-    top: 0;          /* Faz com que a sidebar comece do topo da tela */
-    left: 0;         /* Faz com que a sidebar comece do lado esquerdo da tela */
-    width: 250px;
+  }
+  
+  body {
     height: 100vh;
-    background-color: #97694F;
-    color: #CCC;
-    padding: 15px;
-    box-sizing: border-box;
-    border-right: 4px solid #5C4033;
-    z-index: 100;
-    h2{
-        color: white;
-    }
-    .img-sidebar img{
-        width: 80px;
-        margin: 50px;
-        margin-top: 600px;
-    }
-}
-
-.sidebar a {
-    color: #CCC;
-    text-decoration: none;
-    display: block;
-    padding: 10px 0;
-    margin: 5px 0;
-    border-bottom: 1px solid #5C4033;
-}
-
-.sidebar a:hover {
-    background-color: #5C4033;
-    color: white;
-}
-
-.div-login, .div-registro{
-    display: none;
-    transition: all 0.3s ease;
-}
-
-.form-login, .form-registro {
-    background-color: #97694F;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center; /* Para centralizar o conteúdo dentro do quadrado */
-    border: 4px solid #5C4033;;
-    padding: 60px;
-    margin-top: 160px;
-    margin-left: 700px;
-    margin-right: 700px;
-    border-radius: 16px;
-    box-sizing: border-box;
-    color: #ccc;
-    h2{
-        margin-bottom: 40px;
-        color: white;
-    }
-    #email, #password, #nome, #telefone{
-        margin-bottom: 24px;
-        border-radius: 4px;
-        padding: 4px;
-    }
-    .botao-entrar, .botao-registrar, .botao-senha{
-        margin: 24px;
-       padding: 10px;
-       background-color: #006600;
-       color: #ccc;
-       cursor: pointer;
-       font-size: 16px;
-       border-radius: 8px;
-       border: none;
-    }
-}
-
-
-.div-membros {
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
-    gap: 220px;
-    .membros {
-        display: flex;
-        justify-content: center;
-        gap: 16px;
-
-        .img-membros img {
-            width: 180px;
-            border-radius: 40px;
-            cursor: pointer;
-            transition: 0.5s;
-            border: 2px solid #313131
-        }
-        .img-membros img:hover, .icons-membros i:hover{
-            transform: scale(1.1);
-        }
-
-        .text-membros {
-            background-color: #5C4033;
-            color: #ccc;
-            border-radius: 40px;
-            cursor: pointer;
-            border: 2px solid #313131
-        }
-        .icons-membros{
-            display: flex;
-            gap: 8px;
-            padding: 4px;
-            cursor: pointer;
-            transition: 0.5s;
-        }
-    }
-}
-
-
-.password{
-    height: 60px;
-    background-color: rgba(0,0,0,0.40);
-    border: 1px solid #313131;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFF;
-    border-radius: 4px;
-    transition: transform 0.5s;
-  }
-
-  .password:hover{
-    transform: scale(1.05);
-    border-color: #FFF;
-  }
-
-  .hide{
-    display: none;
+    display: grid;
+    place-items: center;
+    background-color: black;
+    color: rgba(255,255,255,0.85);
   }
   
-  .tooltip{
-    color: #FFF;
+  main {
+    width: 1800px;
+    height: 800px;
+    font: 15px impact,sans-serif;
+  
+    & header {
+      font-size: 30px;
+      text-transform: uppercase;
+      margin-bottom: 2.25rem;
+      color: white;
+  
+      & span {
+        color: var(--primary);
+      }
+    }
+  
+    & section {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-right: 140px;
+    h2{
+      padding: 20px;
+     
+    }
+    .btn-login{
+      width: fit-content;
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      font-size: 15px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .btn-registro{
+      width: fit-content;
+      background-color: transparent;
+      color: white;
+      border: 1px solid var(--primary);
+      font-size: 15px;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+  
+  .indexes, .tabs { list-style-type: none; }
+  
+  .indexes {
+    font-size: 20px;
+    padding: 20px;
+  
+    & li {
+      padding: 1rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+  }
+  
+  .tabs { position: relative; }
+  
+  .tab {
+    position: absolute;
+    display: flex;
+    width: 80vw;
+    height: 60vh;
+    opacity: 0; 
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  .tab-content {
     position: relative;
-    top: 20px;
-    padding: 6px 8px;
-    font-size: 16px;
-    border-radius: 6px;
-    background: rgb(15, 15, 15);
+    z-index: 5;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
     opacity: 0;
-    visibility: hidden;
-    transition: all .5s ease-in-out;
-    text-align: center;
+    transform: translateY(-5rem);
+  
+    & h3 {
+      font-family: helvetica;
+      font-weight: 900;
+      font-size: 20px;
+      border-bottom: 1.5px solid white;
+      padding-bottom: 1rem;
+    }
+  
+    & p {
+      font-family: helvetica;
+      font-weight: 100;
+      line-height: 2;
+      color: rgba(255,255,255,0.7);
+    }
+  
+    & button {
+      width: fit-content;
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      font-size: 15px;
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+    }
   }
   
-  .container-password:hover .tooltip{
-    bottom: 50px;
-    visibility: visible;
-    opacity: 1;
+  @keyframes content {
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
+  
+  .tab-image {
+    position: absolute;
+    right: 1rem;
+    width: 50%;
+    height: 60vh;
+    opacity: 0;
+    transform: translateX(2rem);
+  
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: var(--overlay);
+      mix-blend-mode: multiply;
+    }
+  
+    & img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+      filter: grayscale(100%);
+    }
+  }
+  
+  @keyframes image {
+    100% {
+      opacity: 1;
+      width: 50%;
+      transform: translateX(0);
+    }
+  }
+  
+  .active .tab          { opacity: 1; z-index: 5; }
+  .active .tab-content  { animation: content 0.9s ease-out 0.4s forwards; }
+  .active .tab-image    { animation: image 1s ease-out forwards; }
