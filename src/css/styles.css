@@ -64,6 +64,7 @@ header {
     border: transparent;
     color: var(--primary);
     background-color: white;
+    border-radius: 10px;
   }
 
   .btn-registro {
@@ -79,6 +80,7 @@ header {
     border: transparent;
     color: black;
     background-color: var(--primary);
+    border-radius: 10px;
   }
 }
 
@@ -93,7 +95,7 @@ header {
 
   & li {
     padding: 1rem;
-    border: 1px solid transparent;
+    /*border: 1px solid transparent;*/
     cursor: pointer;
   }
 }
