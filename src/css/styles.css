@@ -51,7 +51,7 @@ header {
     padding: 20px;
   }
 
-  .btn-login {
+  .btn-login{
     width: fit-content;
     background-color: transparent;
     color: white;
@@ -248,9 +248,30 @@ header {
     
 }
 
-
-
-
+.main-login{
+  .form-login{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #entrar-login{
+    width: fit-content;
+    background-color: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  #entrar-login:hover{
+    border: transparent;
+    color: white;
+    background-color: var(--primary);
+    border-radius: 10px;
+  }
+}
 
 
 @keyframes content {

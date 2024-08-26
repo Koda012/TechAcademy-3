@@ -30,3 +30,14 @@ const init = () => showTab(0);
 
 window.addEventListener('load',init,false);
 window.addEventListener('click',activate,false);
+
+
+//////////LOGIN E REGISTRO ABAIXO////////////////////
+document.getElementById('login').addEventListener('click', function() {
+  window.location.href = 'login.html';
+});
+
+
+document.getElementById('registro').addEventListener('click', function(){
+  window.location.href = 'login.html';
+})
