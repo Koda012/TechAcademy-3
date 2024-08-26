@@ -249,12 +249,14 @@ header {
 }
 
 .main-login{
-  .form-login{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
+  .div-login{
+   width: 200px;
+   margin: 200px auto;
+   text-align: center;
+   h2{
+    color: var(--primary);
+    padding: 30px;
+   }
   }
   #entrar-login{
     width: fit-content;
