@@ -30,26 +30,3 @@ const init = () => showTab(0);
 
 window.addEventListener('load',init,false);
 window.addEventListener('click',activate,false);
-
-
-// ADD CODIGOS ABAIXO PARA PAG MEMBROS
-document.addEventListener('DOMContentLoaded', () => {
-  const membrosTab = document.getElementById('membros-tab');
-  const membrosContent = document.getElementById('membros-content');
-  const container = document.querySelector('.container');
-
-  // Função para mostrar a .container quando clicar em MEMBROS
-  membrosTab.addEventListener('click', () => {
-    container.style.display = 'block';
-  });
-
-  // Função para esconder a .container quando sair da aba MEMBROS
-  const tabs = document.querySelectorAll('.indexes li');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      if (tab !== membrosTab) {
-        container.style.display = 'none';
-      }
-    });
-  });
-});

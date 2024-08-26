@@ -158,6 +158,7 @@ header {
   align-items: flex-start;
   max-width: 1200px;
   flex-wrap: wrap;
+  margin-left: 200px;
   .div-icons{
     display: flex;
     align-items: center;
