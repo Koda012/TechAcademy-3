@@ -250,6 +250,16 @@ header {
 }
 
 .main-login{
+  .form-login{
+    input, label{
+      padding: 6px;
+      border-radius: 20px;
+      margin: 12px;
+    }
+    button{
+      margin-top: 20px;
+    }
+  }
   .div-login{
    width: 200px;
    margin: 200px auto;
