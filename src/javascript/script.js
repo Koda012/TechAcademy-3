@@ -39,5 +39,5 @@ document.getElementById('login').addEventListener('click', function() {
 
 
 document.getElementById('registro').addEventListener('click', function(){
-  window.location.href = 'login.html';
+  window.location.href = 'registro.html';
 })

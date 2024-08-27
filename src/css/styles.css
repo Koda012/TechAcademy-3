@@ -287,6 +287,48 @@ header {
 }
 
 
+
+
+.main-registro{
+  .form-registro{
+    input, label{
+      padding: 12px;
+      border-radius: 20px;
+      margin: 12px;
+    }
+    button{
+      margin-top: 20px;
+    }
+  }
+.div-registro{
+  width: 200px;
+  margin: 200px auto;
+  text-align: center;
+  h3{
+    color: var(--primary);
+    padding: 30px;
+  }
+}
+#rg-enviar{
+  width: fit-content;
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+#rg-enviar:hover{
+  border: transparent;
+  color: white;
+  background-color: var(--primary);
+  border-radius: 10px;
+}
+}
+
+
+
+
 @keyframes content {
   100% {
     opacity: 1;
