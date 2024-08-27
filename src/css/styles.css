@@ -67,7 +67,7 @@ header {
     border-radius: 10px;
   }
 
-  .btn-registro {
+  .btn-registro, .contato {
     width: fit-content;
     background-color: transparent;
     color: white;
@@ -75,8 +75,9 @@ header {
     font-size: 15px;
     padding: 10px;
     cursor: pointer;
+    text-decoration: none;
   }
-  .btn-registro:hover{
+  .btn-registro:hover, .contato:hover{
     border: transparent;
     color: black;
     background-color: var(--primary);
