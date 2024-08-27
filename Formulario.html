@@ -8,16 +8,19 @@
     <link rel="stylesheet" href="src/css/styles.css">
     <title>Formulario Jogo</title>
 </head>
-<body>
-    <form action="https://formsubmit.co/lucaskojimaeda@gmail.com" method="POST">
-        Seu Nome:<br/>
-        <input name = "nome" type="text" required/><br/>
-        Seu email:<br/>
-        <input name = "email" type="email"required/><br/>
-        Sua mensagem:
-        <textarea name = "mensagem" required></textarea><br/>
-        <input type="submit" value="enviar"/>
-        <input type="reset" value="Limpar">
-    </form>
-</body>
+<div class="formulario">
+    <body>
+        <h1>CONTE MAIS</h1>
+            <form action="https://formsubmit.co/lucaskojimaeda@gmail.com" method="POST">
+                Seu Nome:<br/>
+                <input name = "nome" type="text" required/>
+                Seu email:<br/>
+                <input name = "email" type="email"required/>
+                Sua mensagem:<br/>
+                <textarea name="mensagem" rows="4" cols="100%" placeholder="Digite sua mensagem"></textarea>
+                <input type="hidden" name="_captcha" value="true">
+                <input type="submit" value="enviar">
+            </form>
+    </body>
+</div> 
 </html>
