@@ -23,18 +23,24 @@
 ?>
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="scr/css/styles">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="shortcut icon" href="img/courthouse_3122429.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/styles.css">
     <style>
-body {
+   body {
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     font-family:fantasy;
     padding-right: 1rem ; padding-left: 1rem;
     justify-content: center;
-    background-color: #B8860B;
+    background-color: black;
+    label{ color: white;}
   }
-  h1 {
+  h3 {
     color:#B8860B;
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -58,29 +64,27 @@ body {
     </style>
 </head>
 <body>
-<main class="main-registro">
-    <div class="div-registro">
-        <form action="registro.php" method="POST">
-        <h3 class="h3-rg">Registra-se</h3>
+    <div class="formulario">
+        <n="registro.php" method="POST">
+        <h3 class="h3-rg">Registre-se</h3>
         <form action="/submit" method="post">
             <label for="name">Nome:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+            <input type="text" id="name" name="name" required><br>
     
             <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+            <input type="email" id="email" name="email" required><br>
     
             <label for="password">Senha:</label><br>
-            <input type="password" id="password" name="password" required><br><br>
+            <input type="password" id="password" name="password" required><br>
 
             <label for="phone">Telefone:</label><br>
-            <input type="tel" id="phone" name="phone" required><br><br>
+            <input type="tel" id="phone" name="phone" required><br>
     
             <label for="address">Endereço:</label><br>
-            <input type="text" id="address" name="address" required><br><br>
+            <input type="text" id="address" name="address" required><br>
     
             <input type="submit" name='submit'>
         </form>
-    </div>
-    </div>
+    </div>    
 </main>
 </body>
