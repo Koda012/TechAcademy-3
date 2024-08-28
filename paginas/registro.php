@@ -24,6 +24,38 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="scr/css/styles">
+    <style>
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family:fantasy;
+    padding-right: 1rem ; padding-left: 1rem;
+    justify-content: center;
+    background-color: #B8860B;
+  }
+  h1 {
+    color:#B8860B;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+  input {
+    margin-bottom: 2rem;
+    align-items: center;
+    width: 100%;
+    display: block;
+  }
+  textarea {
+    width: 100%;
+    max-width: 400px; 
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box; 
+    display: block;
+}
+    </style>
 </head>
 <body>
 <main class="main-registro">
@@ -49,6 +81,6 @@
             <input type="submit" name='submit'>
         </form>
     </div>
-    
+    </div>
 </main>
 </body>

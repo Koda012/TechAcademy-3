@@ -1,5 +1,5 @@
 <?php
-
+    //não apagar, arquivo importante;
     $usuario = 'root';
     $senha = '';
     $database = 'login';
