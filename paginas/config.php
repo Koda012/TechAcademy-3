@@ -1,18 +1,13 @@
 <?php
 
-    $dbHost = 'Localhost';
-    $dbUsername = 'root';
-    $dbPassword = '';
-    $dbName = 'bancodedados';
+    $usuario = 'root';
+    $senha = '';
+    $database = 'login';
+    $host = 'localhost';
 
-    $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
+    $mysqli = new mysqli($host,$usuario,$senha,$database);
 
-    //if($conexao->connect_errno)
-    //{
-    //    echo "erro";
-    ///}
-    //else
-    //{
-    //   echo "conected";
-    // }
+    if($mysqli->error) {
+        die("falha na conexao". $mysqli->error);
+    }
 ?> 
