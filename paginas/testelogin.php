@@ -17,11 +17,11 @@ if(isset($_POST['submit']) && !empty($_POST['email'])  && !empty($_POST['passwor
        
         if(mysqli_num_rows($result) < 1)
         {
-            print_r('Não existe');
+            header('location: login.php');
         }
         else 
         {
-            print_r('Existe');
+            header('Location: index.html');
         }
 }
 else
