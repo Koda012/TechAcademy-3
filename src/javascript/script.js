@@ -34,10 +34,10 @@ window.addEventListener('click',activate,false);
 
 //////////LOGIN E REGISTRO ABAIXO////////////////////
 document.getElementById('login').addEventListener('click', function() {
-  window.location.href = 'paginas/login.html';
+  window.location.href = 'paginas/login.php';
 });
 
 
 document.getElementById('registro').addEventListener('click', function(){
-  window.location.href = 'paginas/registro.html';
+  window.location.href = 'paginas/registro.php';
 });
