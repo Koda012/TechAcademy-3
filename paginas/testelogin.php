@@ -21,7 +21,7 @@ if(isset($_POST['submit']) && !empty($_POST['email'])  && !empty($_POST['passwor
         }
         else 
         {
-            header('Location: index.html');
+            header('Location: index.php');
         }
 }
 else

@@ -65,9 +65,9 @@
 </head>
 <body>
     <div class="formulario">
+      <form action="registro.php" method="POST">
         <n="registro.php" method="POST">
         <h3 class="h3-rg">Registre-se</h3>
-        <form action="/submit" method="post">
             <label for="name">Nome:</label><br>
             <input type="text" id="name" name="name" required><br>
     
