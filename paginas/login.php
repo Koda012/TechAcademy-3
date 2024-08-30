@@ -1,18 +1,3 @@
-<?php 
-if (isset($_POST['email']) && isset($_POST['password'])) {
-  $email = $_POST['email'];
-  $password = $_POST['password'];
-
-if ($email == 'usuario' && $password == 'senha') {
-   
-  $_SESSION['login'] = true;
-  $_SESSION['email'] = $email;
-        exit();  
-    } else {
-        echo "Usuário ou senha incorretos.";
-    }
-    header("Location: ../index.php");}
-?>
 <head>
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=chrome">
@@ -52,13 +37,16 @@ if ($email == 'usuario' && $password == 'senha') {
     box-sizing: border-box; 
     display: block;
 }
+  .echo {
+    color:white;  
+  }
     </style>
 </head>
 <body>
 <main class="main-login">
     <div class="div-login">
         <h2>Login</h2>
-        <form action="" method="POST">
+        <form action="testelogin.php" method="POST">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required placeholder="Digite seu email">
 
