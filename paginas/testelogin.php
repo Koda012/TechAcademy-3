@@ -15,17 +15,14 @@ if(isset($_POST['submit']) && !empty($_POST['email'])  && !empty($_POST['passwor
         $result = $mysqli->query($sql);
 
        
-        if(mysqli_num_rows($result) < 1)
-        {
-            header('location: login.php');
+        if ($result->num_rows > 0) {
+            // Usuário encontrado
+            header("Location: ../index.php"); // Redirecione para a página do dashboard ou sucesso
+        } else {
+            // Usuário não encontrado
+            header("Location: login.php?error=1"); // Redirecione de volta ao formulário de login com uma mensagem de erro
         }
-        else 
-        {
-            header('Location: ../index.php');
-        }
-}
-else
-{
-    header('Location: login.php');
-}
+        
+        $stmt->close();
+        $conn->close();}
 ?>

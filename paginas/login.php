@@ -37,8 +37,13 @@
     box-sizing: border-box; 
     display: block;
 }
-  .echo {
-    color:white;  
+.error-message {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  p {
+    color:red;
   }
     </style>
 </head>
@@ -46,13 +51,16 @@
 <main class="main-login">
     <div class="div-login">
         <h2>Login</h2>
+        
         <form action="testelogin.php" method="POST">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required placeholder="Digite seu email">
 
             <label class="label-senha" for="password">Senha</label>
             <input type="password" id="password" name="password" required placeholder="Digite sua Senha">
-
+            <?php if (isset($_GET['error']) && $_GET['error'] == 1): ?>
+            <p class="error-message">Email ou senha incorretos.<br> Tente novamente.</p>
+        <?php endif; ?>
             <input type="submit" name = "submit" value='entrar'> </input>
     </form>
     </div>

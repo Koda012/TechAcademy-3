@@ -63,6 +63,7 @@ header("Location: ../paginas/login.php");
     box-sizing: border-box; 
     display: block;
 }
+
     </style>
 </head>
 <body>
