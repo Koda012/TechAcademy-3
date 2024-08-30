@@ -19,6 +19,8 @@
 
             $result = mysqli_query($mysqli, "INSERT INTO usuarios(name, email, password, phone, address) 
             VALUES ('$name','$email','$password','$phone','$address')");
+
+header("Location: ../paginas/login.php");
         }
 ?>
 <!DOCTYPE html>
