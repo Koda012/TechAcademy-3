@@ -51,7 +51,7 @@
           <div class='tab-image'><img src='img/tribunal.jpg'></div>
         </li>
 
-        <div class="itens-center">
+        <div class="resp-membros">
           <div class="container">
             <div class="cards-centralizados">
               <div class="card">

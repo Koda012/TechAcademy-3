@@ -413,3 +413,19 @@ header {
     display: block;
 }
 }
+
+.resp-membros {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .resp-membros {
+      display: block;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .resp-membros {
+      display: none;
+  }
+}
