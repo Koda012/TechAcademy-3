@@ -51,58 +51,8 @@
           <div class='tab-image'><img src='img/tribunal.jpg'></div>
         </li>
 
-        <div class="resp-membros">
-          <div class="container">
-            <div class="cards-centralizados">
-              <div class="card">
-                <div class="content">
-                  <img class="img" src="img/mv.jpg">
-                  <h3>Marcos Vinicius</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque officiis cupiditate aut voluptates,
-                    quae doloremque quos impedit recusandae, veniam totam officia illo consequatur, sunt magni nulla
-                    laudantium in dignissimos praesentium!
-                  </p>
-                  <div class="div-icons">
-                    <div class="insta">
-                      <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                      </a>
-                    </div>
-                    <div class="github">
-                      <a href="#">
-                        <i class="fa-brands fa-github"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="content">
-                  <img class="img" src="img/lucas.PNG">
-                  <h3>Lucas Koji</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque officiis cupiditate aut voluptates,
-                    quae doloremque quos impedit recusandae, veniam totam officia illo consequatur, sunt magni nulla
-                    laudantium in dignissimos praesentium!
-                  </p>
-                  <div class="div-icons">
-                    <div class="insta">
-                      <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                      </a>
-                    </div>
-                    <div class="github">
-                      <a href="#">
-                        <i class="fa-brands fa-github"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+       
+        
       </ul>
 
       </ul>

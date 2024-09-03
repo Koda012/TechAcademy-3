@@ -19,16 +19,10 @@
 
   <main>
   <?php
-    // Imprimir o conteúdo do array do GET
-    // print_r($_GET);
-
-    // Recuperar a variável página
     $pagina = $_GET["pagina"] ?? "home";
 
-    // Constrói o caminho do arquivo da página
     $pagina = "paginas/{$pagina}.php";
 
-    // Verificar se o arquivo existe
     if (file_exists($pagina)) {
         include $pagina;
     } else {
@@ -52,9 +46,9 @@
     })
   </script>
 </body>
-<footer>
-  <p> &copy; 2024 <img src="img/LOGO1.png" alt="Judge me NOW!" style="width: 70px; height: auto;"> Todos os direitos
-    reservados </p>
-</footer>
+
+<footer class="footer">
+  <p> &copy; 2024 <img class="img-footer" src="img/LOGO1.png" alt="Judge me NOW!"> Todos os direitos reservados </p>
+</footer> 
 
 </html>
