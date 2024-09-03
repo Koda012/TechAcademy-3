@@ -60,7 +60,7 @@
   }
   li.tab {
     align-self: right;
-    height: 400px;
+    height: 500px;
   }
   }
   </style>
