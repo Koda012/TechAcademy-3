@@ -9,5 +9,8 @@
 
     if($mysqli->error) {
         die("falha na conexao". $mysqli->error);
+    }else {
+        
+        header("Location: registro.php?error=1"); 
     }
 ?> 

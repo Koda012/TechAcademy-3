@@ -63,6 +63,14 @@ header("Location: ../paginas/login.php");
     box-sizing: border-box; 
     display: block;
 }
+  p {
+    color: red;
+  }
+.error-message {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
 
     </style>
 </head>
@@ -85,7 +93,9 @@ header("Location: ../paginas/login.php");
     
             <label for="address">Endereço:</label><br>
             <input type="text" id="address" name="address" required><br>
-    
+            <?php if (isset($_GET['error']) && $_GET['error'] == 1): ?>
+            <p class="error-message">usuario já existente.<br> Tente novamente.</p>
+        <?php endif; ?>
             <input type="submit" name='submit'>
         </form>
     </div>    
