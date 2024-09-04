@@ -13,57 +13,6 @@
   <link rel="shortcut icon" href="img/courthouse_3122429.png" type="image/x-icon">
   <link rel="stylesheet" href="src/css/styles.css">
   <title>Judge NOW</title>
-  <style>
-    @media screen and (max-width: 700px) {
-  html {
-    width: 500px;
-    place-items: center;
-  }
-  body{
-    width: 500px;
-    place-items: left;
-  }
-  header{
-    width: 500px;
-    margin-right: 0px;
-    justify-content: none;
-  }
-  h2 {
-    margin: 0px;
-  }
-  footer {
-    width: 350px;
-      
-    text-align: right;
-  }
-  .botoes {
-    width: 10px;
-    font-size: 3px;
-    align-items: left;
-  }
-  main{
-    width: 500px; 
-    align-self: left;
-  }
-  section {
-    align-self: left;
-  }
-  ul.indexes {
-    align-self: left;
-    align-items: left;
-  }
-  img.img-footer {
-    width: 50px;
-  }
-  div.tab-image {
-    display: 
-  }
-  li.tab {
-    align-self: right;
-    height: 500px;
-  }
-  }
-  </style>
 </head>
 
 <body>
