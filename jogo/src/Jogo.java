@@ -97,7 +97,6 @@ public class Jogo {
         System.out.println("Jogo carregado com sucesso.");
     }
 
-
     public static void main(String[] args) {
         Jogo jogo = new Jogo();
         jogo.iniciar();
@@ -112,7 +111,7 @@ class Jogador {
     public Jogador() {
         this.nome = "Jogador";
         this.inventario = new ArrayList<>();
-        this.localizacao = "Caverna Escura"; 
+        this.localizacao = "Caverna Escura";
     }
 
     public void adicionarItem(String item) {
