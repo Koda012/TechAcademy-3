@@ -15,7 +15,9 @@ public class Jogo {
         Scanner scanner = new Scanner(System.in);
         boolean jogando = true;
 
-        System.out.println("Bem-vindo ao Jogo de Aventura em Texto!");
+        System.out.println("Bem-vindo ao Jogo de Aventura em Texto! \n" +
+                "Comandos para prosseguir: \n" +
+                "pegar; olhar; falar; salvar; carregar; sair;");
 
         while (jogando) {
             System.out.print("> ");
@@ -27,7 +29,8 @@ public class Jogo {
 
     private boolean processarComando(String input) {
         String[] partes = input.split(" ");
-        String comando = partes[0];
+        //String comando = partes[0];
+        String comando = partes[0].trim();
 
         switch (comando) {
             case "pegar":

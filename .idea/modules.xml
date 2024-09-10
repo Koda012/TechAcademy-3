@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JAVAtextadventure/JAVAtextadventure.iml" filepath="$PROJECT_DIR$/JAVAtextadventure/JAVAtextadventure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tasks/Tasks semana 1/Tasks semana 1.iml" filepath="$PROJECT_DIR$/Tasks/Tasks semana 1/Tasks semana 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tasks/Tasks semana 4/Tasks semana 4.iml" filepath="$PROJECT_DIR$/Tasks/Tasks semana 4/Tasks semana 4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tasks/Tasks semana 5/Tasks semana 5.iml" filepath="$PROJECT_DIR$/Tasks/Tasks semana 5/Tasks semana 5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TechAcademy-3.iml" filepath="$PROJECT_DIR$/.idea/TechAcademy-3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jogo/jogo.iml" filepath="$PROJECT_DIR$/jogo/jogo.iml" />
+    </modules>
+  </component>
+</project>
