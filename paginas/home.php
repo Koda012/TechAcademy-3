@@ -4,8 +4,9 @@
     <button class="btn-login" id="login.php">Login</button>
     <button class="btn-registro" id="registro.php">Registra-se</button>
     <a class="contato" href="Formulario.html">Entre em contato</a>
+  </div>
 
-    <div id="drop-menu"class="dropdown">
+  <div id="drop-menu"class="dropdown">
       <button class="btn btn-drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa-solid fa-bars"></i>
       </button>
@@ -15,8 +16,6 @@
         <li><a class="dropdown-item" href="formulario.html">Entre em contato</a></li>
       </ul>
     </div>
-
-  </div>
 </header>
 <section>
   <ul class='indexes'>

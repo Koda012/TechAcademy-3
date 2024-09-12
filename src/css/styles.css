@@ -50,6 +50,11 @@ header {
   h2 {
     padding: 20px;
   }
+  .botoes{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
 
   .btn-login {
     width: fit-content;
