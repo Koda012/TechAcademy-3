@@ -20,7 +20,7 @@ body {
 }
 
 main {
-  width: 1800px;
+  width: 100%; /* mudança de 1800px para 100% */
   height: 800px;
   font: 15px impact, sans-serif;
 
@@ -121,7 +121,7 @@ header {
 .tab {
   position: absolute;
   display: flex;
-  width: 80vw;
+  width: 75vw; /* mudança aqui tbm de 80vw para 75, somente para lembrar caso precisa reverter */
   height: 60vh;
   opacity: 0;
   background-color: black;
@@ -164,6 +164,7 @@ header {
     cursor: pointer;
   }
 }
+
 
 .main-login {
   .form-login {

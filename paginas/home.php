@@ -17,7 +17,7 @@
       </ul>
     </div>
 </header>
-<section>
+<section class="section">
   <ul class='indexes'>
     <li data-index='0'>HOME</li>
     <li><a href="game">Jogo</a></li>
