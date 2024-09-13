@@ -1,5 +1,7 @@
 <main>
 
+  <button class="btn-voltar"><i class="fa-solid fa-arrow-left"></i><a href="home"></a>Voltar</button>
+
   <body>
     <div class="chat-container">
       <div class="chat-header">
@@ -30,6 +32,7 @@
     background-color: black;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
   .chat-container {
@@ -118,5 +121,26 @@
   .chat-input button:hover {
     background: rgb(255, 220, 0);
     transition: 0.5s;
+  }
+
+  .btn-voltar {
+    display: flex;
+    gap: 3px;
+    width: fit-content;
+    background-color: var(--primary);
+    color: white;
+    border: transparent;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .btn-voltar:hover {
+    border: transparent;
+    color: var(--primary);
+    background-color: white;
+    border-radius: 5px;
   }
 </style>
