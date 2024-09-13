@@ -12,25 +12,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" href="img/courthouse_3122429.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/chaveicon.png" type="image/x-icon">
   <link rel="stylesheet" href="src/css/styles.css">
-  <title>Judge NOW</title>
+  <title>A Última Chave</title>
 </head>
 
 <body>
 
   <main>
-  <?php
+    <?php
     $pagina = $_GET["pagina"] ?? "home";
 
     $pagina = "paginas/{$pagina}.php";
 
     if (file_exists($pagina)) {
-        include $pagina;
+      include $pagina;
     } else {
-        include "paginas/erro.php";
+      include "paginas/erro.php";
     }
-?>
+    ?>
 
   </main>
 
@@ -40,7 +40,8 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="src/javascript/vanilla-tilt.js"></script>
-  <script>VanillaTilt.init(document.querySelectorAll(".card"), {
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".card"), {
       max: 35,
       speed: 400,
       glare: true,
@@ -51,6 +52,6 @@
 
 <footer class="footer">
   <p> &copy; 2024 <img class="img-footer" src="img/LOGO1.png" alt="Judge me NOW!" style="width: 70px;"> Todos os direitos reservados </p>
-</footer> 
+</footer>
 
 </html>

@@ -20,7 +20,7 @@
 <section>
   <ul class='indexes'>
     <li data-index='0'>HOME</li>
-    <li data-index='1'>JOGO</li>
+    <li><a href="game">Jogo</a></li>
     <li data-index='2'>DOC</li>
     <li data-index='3'>MEMBROS</li>
   </ul>
