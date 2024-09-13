@@ -5,3 +5,4 @@ document.getElementById('entrar-login').addEventListener('click', function(){
   document.getElementById('rg-enviar').addEventListener('click', function(){
     window.location.href = 'index.php';
   })
+

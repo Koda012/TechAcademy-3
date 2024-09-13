@@ -1,6 +1,6 @@
 <main>
 
-  <button class="btn-voltar"><i class="fa-solid fa-arrow-left"></i><a href="home"></a>Voltar</button>
+  <button class="btn-voltar" id="voltar"><i class="fa-solid fa-arrow-left"></i>Voltar</button> <!-- arrumar -->
 
   <body>
     <div class="chat-container">

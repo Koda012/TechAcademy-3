@@ -8,7 +8,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -17,6 +16,7 @@ body {
   place-items: center;
   background-color: black;
   color: rgba(255, 255, 255, 0.85);
+  box-sizing: border-box;
 }
 
 main {
@@ -43,9 +43,9 @@ main {
 
 header {
   display: flex;
-  justify-content: space-between;
   box-sizing: border-box;
   margin-right: 140px;
+  justify-content: space-between;
 
   h2 {
     padding: 20px;
@@ -432,11 +432,6 @@ header {
     margin: 0px;
   }
 
-  footer {
-    width: 350px;
-
-    text-align: right;
-  }
 
   .botoes {
     width: 10px;

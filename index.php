@@ -51,7 +51,7 @@
 </body>
 
 <footer class="footer">
-<p> &copy; 2024 <img class="img-footer" src="img/ultimachave.png" alt="A Última Chave" style="width: 100px;"> Todos os direitos reservados </p>
+  <p> &copy; 2024 <img class="img-footer" src="img/ultimachave.png" alt="A Última Chave" style="width: 100px;"> Todos os direitos reservados </p>
 </footer>
 
 </html>
