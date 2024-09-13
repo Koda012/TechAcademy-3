@@ -51,7 +51,7 @@
 </body>
 
 <footer class="footer">
-  <p> &copy; 2024 <img class="img-footer" src="img/LOGO1.png" alt="Judge me NOW!" style="width: 70px;"> Todos os direitos reservados </p>
+  <p> &copy; 2024 Todos os direitos reservados </p>
 </footer>
 
 </html>

@@ -44,7 +44,7 @@
   }
 
   .chat-header {
-    background: rgb(102, 88, 0);
+    background: #B8860B;
     color: #fff;
     padding: 15px;
     border-radius: 8px 8px 0 0;
@@ -77,7 +77,7 @@
   }
 
   .message.sent {
-    background: rgb(102, 88, 0);
+    background: #B8860B;
     color: #fff;
     margin-left: auto;
     margin-right: 0;
@@ -108,7 +108,7 @@
 
   .chat-input button {
     padding: 10px 15px;
-    background:rgb(102, 88, 0);
+    background: #B8860B;
     color: #fff;
     border: none;
     border-radius: 5px;

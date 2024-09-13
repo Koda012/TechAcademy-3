@@ -1,5 +1,5 @@
 <header>
-  <h2><span>JUDGE</span> NOW</h2>
+  <h2>A Última <span>Chave</span></h2>
   <div class="botoes">
     <button class="btn-login" id="login">Login</button>
     <button class="btn-registro" id="registro">Registra-se</button>
@@ -35,7 +35,7 @@
           maiores magni. Necessitatibus, iste aut.</p>
         <button>Read More</button>
       </article>
-      <div class='tab-image'><img src='img/autoridade.jpg'></div>
+      <!--<div class='tab-image'><img src='img/autoridade.jpg'></div> -->
     </li>
 
     <li class='tab'>
@@ -47,7 +47,7 @@
           maiores magni. Necessitatibus, iste aut.</p>
         <button>Read More</button>
       </article>
-      <div class='tab-image'><img src='img/martelo.jpg'></div>
+     <!-- <div class='tab-image'><img src='img/martelo.jpg'></div> -->
     </li>
 
     <li class='tab'>
@@ -59,7 +59,7 @@
           maiores magni. Necessitatibus, iste aut.</p>
         <button>Read More</button>
       </article>
-      <div class='tab-image'><img src='img/tribunal.jpg'></div>
+     <!-- <div class='tab-image'><img src='img/tribunal.jpg'></div> -->
     </li>
 
 
