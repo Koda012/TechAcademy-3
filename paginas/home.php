@@ -1,8 +1,8 @@
 <header>
   <h2><span>JUDGE</span> NOW</h2>
   <div class="botoes">
-    <button class="btn-login" id="login.php">Login</button>
-    <button class="btn-registro" id="registro.php">Registra-se</button>
+    <button class="btn-login" id="login">Login</button>
+    <button class="btn-registro" id="registro">Registra-se</button>
     <a class="contato" href="Formulario.html">Entre em contato</a>
   </div>
 
@@ -11,8 +11,8 @@
       <i class="fa-solid fa-bars"></i>
       </button>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="paginas/login.php">Login</a></li>
-        <li><a class="dropdown-item" href="paginas/registro.php">Registra-se</a></li>
+        <li><a class="dropdown-item" href="login">Login</a></li>
+        <li><a class="dropdown-item" href="registro">Registra-se</a></li>
         <li><a class="dropdown-item" href="formulario.html">Entre em contato</a></li>
       </ul>
     </div>
