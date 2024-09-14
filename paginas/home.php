@@ -22,8 +22,8 @@
     <li data-index='0'>HOME</li>
     <li data-index='2'>DOC</li>
     <li><a href="game">JOGO</a></li>
-    <li data-index='3'>MEMBROS</li>
-  </ul>
+    <li><a href="membros">MEMBROS</li> <!-- AJUSTAR O A HREF PARA LEVAR A PAGINA MEMBROS. FAZE COM JS -->
+  </ul> 
   <ul class='tabs'>
 
     <li class='tab'>
@@ -41,7 +41,7 @@
 
     <li class='tab'>
       <article class='tab-content'>
-        <h3>SUB TITULO</h3>
+        <h3>DOCUMENTAÇÃO</h3>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           Voluptas nihil sequi doloribus obcaecati. Aut vel, recusandae ipsa
           voluptate blanditiis nemo magnam sit modi architecto officia
@@ -62,8 +62,6 @@
       </article>
      <!-- <div class='tab-image'><img src='img/tribunal.jpg'></div> -->
     </li>
-
-
 
   </ul>
 
