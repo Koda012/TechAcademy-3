@@ -20,19 +20,20 @@
 <section class="section">
   <ul class='indexes'>
     <li data-index='0'>HOME</li>
-    <li><a href="game">Jogo</a></li>
     <li data-index='2'>DOC</li>
+    <li><a href="game">JOGO</a></li>
     <li data-index='3'>MEMBROS</li>
   </ul>
   <ul class='tabs'>
 
     <li class='tab'>
       <article class='tab-content'>
-        <h3>SUB TITULO</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Voluptas nihil sequi doloribus obcaecati. Aut vel, recusandae ipsa
-          voluptate blanditiis nemo magnam sit modi architecto officia
-          maiores magni. Necessitatibus, iste aut.</p>
+        <h3>INTRODUÇÃO</h3>
+        <p>Você acorda em uma cela fria, sem lembranças da noite anterior. 
+          Um bilhete no chão é sua única pista: "A chave está escondida onde 
+          o silêncio ecoa." Agora, você deve explorar o ambiente, encontrar a 
+          chave e escapar antes que seja tarde demais. Cada decisão pode ser 
+          sua salvação.</p>
         <button>Read More</button>
       </article>
       <!--<div class='tab-image'><img src='img/autoridade.jpg'></div> -->
