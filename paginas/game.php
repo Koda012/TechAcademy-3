@@ -1,6 +1,11 @@
 <main>
 
-  <button class="btn-voltar" id="voltar"><i class="fa-solid fa-arrow-left"></i>Voltar</button> <!-- arrumar -->
+  <button class="btn-voltar" id="btn-voltar"><i class="fa-solid fa-arrow-left"></i>Voltar</button>
+  <script>
+      document.getElementById('btn-voltar').addEventListener('click', function(){
+    window.location.href = 'home';
+  })
+  </script>
 
   <body>
     <div class="chat-container">
