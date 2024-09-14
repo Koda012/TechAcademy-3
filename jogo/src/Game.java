@@ -9,14 +9,14 @@ public class Game {
     private Player player;
     private Room room;
 
-    // Conexão com o banco de dados
+   
     private Connection connection;
 
     public Game() throws SQLException {
-        // Inicializa a conexão com o banco de dados (presumindo que você já configurou a conexão)
+        
         connection = JogoMySQL.connect();
-        player = new Player("Jogador");  // Nome pode ser passado ou pego do banco
-        room = new Room(connection);  // Passa a conexão para a sala
+        player = new Player("Jogador");  
+        room = new Room(connection);  
     }
 
     public void start() {
@@ -52,7 +52,7 @@ public class Game {
                     break;
                 case "USAR CHAVE NA PORTA":
                     if (room.useKey()) {
-                        gameRunning = false;  // O jogo termina após abrir a porta
+                        gameRunning = false;  
                     }
                     break;
                 default:
@@ -63,7 +63,7 @@ public class Game {
         }
 
         System.out.println(getPhrase("game_end"));
-        saveGame();  // Salva o progresso no banco de dados
+        saveGame();  
         scanner.close();
     }
 
@@ -78,7 +78,7 @@ public class Game {
         System.out.println("USAR CHAVE NA PORTA");
     }
 
-    // Função para salvar o estado do jogo no banco de dados
+    
     private void saveGame() {
         try {
             String query = "INSERT INTO game_state (player_name, room_description, has_key, door_open) VALUES (?, ?, ?, ?)";
@@ -94,9 +94,9 @@ public class Game {
         }
     }
 
-    // Função para buscar frases no banco de dados
+    
     private String getPhrase(String phraseKey) {
-        String phrase = "Frase não encontrada.";  // Valor padrão caso a frase não seja encontrada
+        String phrase = "Frase não encontrada."; 
         try {
             String query = "SELECT phrase FROM game_frases WHERE phrase_key = ?";
             PreparedStatement stmt = connection.prepareStatement(query);

@@ -6,12 +6,12 @@ import java.sql.SQLException;
 public class Room {
     private boolean hasKey;
     private boolean doorOpen;
-    private Connection connection;  // Adiciona a conexão ao banco de dados
+    private Connection connection;  
 
     public Room(Connection connection) {
         this.hasKey = false;
         this.doorOpen = false;
-        this.connection = connection;  // Inicializa a conexão
+        this.connection = connection;  
     }
 
     public void lookAround() {
@@ -66,9 +66,9 @@ public class Room {
         return "Cela de pedra com uma cama e uma porta de ferro.";
     }
 
-    // Função para buscar frases no banco de dados
+    
     private String getPhrase(String phraseKey) {
-        String phrase = "Frase não encontrada.";  // Valor padrão caso a frase não seja encontrada
+        String phrase = "Frase não encontrada.";  
         try {
             String query = "SELECT phrase FROM game_frases WHERE phrase_key = ?";
             PreparedStatement stmt = connection.prepareStatement(query);
