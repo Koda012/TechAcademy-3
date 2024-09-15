@@ -57,19 +57,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
         gap: 40px;
-        margin: 40px;
+        margin: 80px;
 
         .div-card {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            border: 1px solid var(--primary);
-            width: 500px;
+            width: 300px;
             gap: 20px;
             padding: 16px;
+            box-shadow: 2px 2px 10px 2px var(--primary);
         }
 
         .img-membros {
