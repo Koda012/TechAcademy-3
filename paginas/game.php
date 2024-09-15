@@ -140,6 +140,7 @@
     cursor: pointer;
     text-decoration: none;
     border-radius: 5px;
+    margin: 40px;
   }
 
   .btn-voltar:hover {
@@ -147,5 +148,9 @@
     color: var(--primary);
     background-color: white;
     border-radius: 5px;
+  }
+
+  footer{
+    margin-top: 250px;
   }
 </style>
