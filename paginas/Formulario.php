@@ -7,9 +7,52 @@
     <link rel="shortcut icon" href="img/courthouse_3122429.png" type="image/x-icon">
     <link rel="stylesheet" href="src/css/styles.css">
     <title>Formulario Jogo</title>
+    <style>
+    main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family:fantasy;
+    padding-right: 1rem ; padding-left: 1rem;
+    justify-content: center;
+    background-color: black;
+    label{ color: white;}
+  }
+  h3 {
+    color:#B8860B;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+  input {
+    margin-bottom: 2rem;
+    align-items: center;
+    width: 100%;
+    display: block;
+  }
+  textarea {
+    width: 100%;
+    max-width: 400px; 
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box; 
+    display: block;
+}
+
+  a {
+    background-color:white;
+    align-items: center;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: black;
+  }
+</style>
 </head>
 <div class="formulario">
-    <body>
+    <main>
         <h1>CONTE MAIS</h1>
             <form action="https://formsubmit.co/016d8d441cb6320df0c2627c712e145e" method="POST">
                 Seu Nome:<br/>
@@ -20,7 +63,8 @@
                 <textarea name="mensagem" rows="4" cols="100%" placeholder="Digite sua mensagem"></textarea>
                 <input type="hidden" name="_captcha" value="true">
                 <input type="submit" value="enviar">
+                
             </form>
-    </body>
+    </main>
 </div> 
 </html>

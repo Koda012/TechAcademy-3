@@ -6,9 +6,9 @@
   <div class="botoes">
     <?php if (!isset($_SESSION['logado']) || $_SESSION['logado'] !== true) : ?>
       <button class="btn-login" id="login">Login</button>
-      <button class="btn-registro" id="registro">Registra-se</button>
+      <button class="btn-registro" id="registro" target="_blank">Registra-se</button>
     <?php endif; ?>
-    <a class="contato" href="Formulario.html">Entre em contato</a>
+    <a class="contato" href="Formulario"target="_blank">Entre em contato</a>
   </div>
 
   <div id="drop-menu"class="dropdown">
@@ -18,7 +18,7 @@
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="login">Login</a></li>
         <li><a class="dropdown-item" href="registro">Registra-se</a></li>
-        <li><a class="dropdown-item" href="formulario.html">Entre em contato</a></li>
+        <li><a class="dropdown-item" href="Formulario">Entre em contato</a></li>
       </ul>
     </div>
 </header>

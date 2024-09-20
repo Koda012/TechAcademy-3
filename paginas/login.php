@@ -45,13 +45,21 @@
   p {
     color:red;
   }
+  a {
+    background-color:white;
+    align-items: center;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: black;
+  }
     </style>
+  
 </head>
 <body>
 <main class="main-login">
     <div class="div-login">
         <h2>Login</h2>
-        
         <form action="testelogin.php" method="POST">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required placeholder="Digite seu email">
@@ -62,6 +70,7 @@
             <p class="error-message">Email ou senha incorretos.<br> Tente novamente.</p>
         <?php endif; ?>
             <input type="submit" name = "submit" value='entrar'> </input>
+            <a class='voltar' href="../home" ></i>Voltar</a>
     </form>
     </div>
     <script src="src/javascript/botao.js"></script>

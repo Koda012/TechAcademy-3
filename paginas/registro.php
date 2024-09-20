@@ -71,6 +71,14 @@ header("Location: ../paginas/login.php");
     margin-bottom: 1rem;
     text-align: center;
   }
+  a {
+    background-color:white;
+    align-items: center;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: black;
+  }
 
     </style>
 </head>
@@ -97,6 +105,7 @@ header("Location: ../paginas/login.php");
             <p class="error-message">usuario já existente.<br> Tente novamente.</p>
         <?php endif; ?>
             <input type="submit" name='submit'>
+            <a class='voltar' href="../home" ></i>Voltar</a>
         </form>
     </div>    
 </main>

@@ -41,3 +41,6 @@ document.getElementById('login').addEventListener('click', function() {
 document.getElementById('registro').addEventListener('click', function(){
   window.location.href = 'paginas/registro.php';
 });
+document.getElementById('btn-voltar').addEventListener('click', function(){
+  window.location.href = 'paginas/home.php';
+});
