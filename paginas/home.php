@@ -39,7 +39,8 @@
           o silêncio ecoa." Agora, você deve explorar o ambiente, encontrar a 
           chave e escapar antes que seja tarde demais. Cada decisão pode ser 
           sua salvação.</p>
-        <button>Read More</button>
+        <br>
+        
       </article>
       <!--<div class='tab-image'><img src='img/autoridade.jpg'></div> -->
     </li>
@@ -51,7 +52,7 @@
           Voluptas nihil sequi doloribus obcaecati. Aut vel, recusandae ipsa
           voluptate blanditiis nemo magnam sit modi architecto officia
           maiores magni. Necessitatibus, iste aut.</p>
-        <button>Read More</button>
+          <br>
       </article>
      <!-- <div class='tab-image'><img src='img/martelo.jpg'></div> -->
     </li>
@@ -63,7 +64,7 @@
           Voluptas nihil sequi doloribus obcaecati. Aut vel, recusandae ipsa
           voluptate blanditiis nemo magnam sit modi architecto officia
           maiores magni. Necessitatibus, iste aut.</p>
-        <button>Read More</button>
+          <br>
       </article>
      <!-- <div class='tab-image'><img src='img/tribunal.jpg'></div> -->
     </li>
