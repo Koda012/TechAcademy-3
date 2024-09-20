@@ -27,7 +27,7 @@
     <li data-index='0'>HOME</li>
     <li data-index='2'>DOC</li>
     <li><a href="game">JOGO</a></li>
-    <li><a href="membros">MEMBROS</li> <!-- AJUSTAR O A HREF PARA LEVAR A PAGINA MEMBROS. FAZE COM JS -->
+    <li><a href="membros">MEMBROS</a></li> <!-- AJUSTAR O A HREF PARA LEVAR A PAGINA MEMBROS. FAZE COM JS -->
   </ul> 
   <ul class='tabs'>
 
