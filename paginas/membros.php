@@ -49,7 +49,12 @@
 
 
     </div>
-
+    <button class="btn-membrosvoltar" id="btn-membrosvoltar"><i class="fa-solid fa-arrow-left"></i>Voltar</button>
+  <script>
+      document.getElementById('btn-membrosvoltar').addEventListener('click', function(){
+    window.location.href = 'home';
+  })
+  </script>
 </main>
 
 <style>
