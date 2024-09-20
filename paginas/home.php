@@ -1,8 +1,13 @@
 <header>
+    <?php
+    session_start();
+    ?>
   <h2>A Última <span>Chave</span></h2>
   <div class="botoes">
-    <button class="btn-login" id="login">Login</button>
-    <button class="btn-registro" id="registro">Registra-se</button>
+    <?php if (!isset($_SESSION['logado']) || $_SESSION['logado'] !== true) : ?>
+      <button class="btn-login" id="login">Login</button>
+      <button class="btn-registro" id="registro">Registra-se</button>
+    <?php endif; ?>
     <a class="contato" href="Formulario.html">Entre em contato</a>
   </div>
 
