@@ -9,7 +9,7 @@ public class RoomWrapper {
         this.room = room;
     }
 
-    // Método que faz o jogador interagir com os objetos da sala
+
     public void handleCommand(String command) {
         switch (command) {
             case "OLHAR AO REDOR":
@@ -36,12 +36,12 @@ public class RoomWrapper {
         }
     }
 
-    // Wrapper para pegar o inventário da sala
+
     public void showInventory() {
         System.out.println("Inventário: " + room.getInventory());
     }
 
-    // Wrapper para pegar a descrição da sala
+
     public void describeRoom() {
         System.out.println(room.getDescription());
     }
