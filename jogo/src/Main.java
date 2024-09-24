@@ -1,9 +1,12 @@
+import game.Game;
+
+import game.Game;
+
 import java.sql.SQLException;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
         Game game = new Game();
         game.start();
-    }
+}
 }

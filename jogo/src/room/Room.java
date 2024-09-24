@@ -1,17 +1,23 @@
+package room;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Room {
-    private boolean hasKey;
-    private boolean doorOpen;
-    private Connection connection;  
+    private Boolean hasKey;
+    private Boolean doorOpen;
+    private List<String> inventory;
+    private Connection connection;
 
     public Room(Connection connection) {
         this.hasKey = false;
         this.doorOpen = false;
-        this.connection = connection;  
+        this.inventory = new ArrayList<>();
+        this.connection = connection;
     }
 
     public void lookAround() {
@@ -33,6 +39,7 @@ public class Room {
     public void pickKey() {
         if (!hasKey) {
             hasKey = true;
+            inventory.add("Chave");
             System.out.println(getPhrase("pick_key"));
         } else {
             System.out.println(getPhrase("already_picked_key"));
@@ -54,21 +61,32 @@ public class Room {
         }
     }
 
-    public boolean hasKey() {
+    public Boolean hasKey() {
         return hasKey;
     }
 
-    public boolean isDoorOpen() {
+    public void setHasKey(Boolean hasKey) {
+        this.hasKey = hasKey;
+    }
+
+    public Boolean isDoorOpen() {
         return doorOpen;
+    }
+
+    public void setDoorOpen(Boolean doorOpen) {
+        this.doorOpen = doorOpen;
+    }
+
+    public List<String> getInventory() {
+        return inventory;
     }
 
     public String getDescription() {
         return "Cela de pedra com uma cama e uma porta de ferro.";
     }
 
-    
     private String getPhrase(String phraseKey) {
-        String phrase = "Frase não encontrada.";  
+        String phrase = "Frase não encontrada.";
         try {
             String query = "SELECT phrase FROM game_frases WHERE phrase_key = ?";
             PreparedStatement stmt = connection.prepareStatement(query);
