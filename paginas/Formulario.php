@@ -31,6 +31,8 @@
     align-items: center;
     width: 100%;
     display: block;
+    padding: 8px;
+    border-radius: 6px;
   }
   textarea {
     width: 100%;
@@ -49,6 +51,19 @@
     text-align: center;
     color: black;
   }
+  .input-enviar{
+      background-color: transparent;
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid #B8860B;
+      cursor: pointer;
+      color: white;
+    }
+    .input-enviar:hover{
+      background-color: #B8860B;
+      color: black;
+      cursor: pointer;
+    }
 </style>
 </head>
 <div class="formulario">
@@ -56,13 +71,13 @@
         <h1>CONTE MAIS</h1>
             <form action="https://formsubmit.co/016d8d441cb6320df0c2627c712e145e" method="POST">
                 Seu Nome:<br/>
-                <input name = "nome" type="text" required/>
+                <input name = "nome" type="text" placeholder="Digite seu Nome" required/>
                 Seu email:<br/>
-                <input name = "email" type="email"required/>
+                <input name = "email" type="email" placeholder="Digite seu Email" required/>
                 Sua mensagem:<br/>
                 <textarea name="mensagem" rows="4" cols="100%" placeholder="Digite sua mensagem"></textarea>
                 <input type="hidden" name="_captcha" value="true">
-                <input type="submit" value="enviar">
+                <input class="input-enviar" type="submit" value="enviar">
                 
             </form>
     </main>
