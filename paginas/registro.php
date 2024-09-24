@@ -31,113 +31,96 @@ if (isset($_POST['submit'])) {
   <link rel="shortcut icon" href="img/courthouse_3122429.png" type="image/x-icon">
   <link rel="stylesheet" href="src/css/styles.css">
   <style>
-    body {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      font-family: fantasy;
-      padding-right: 1rem;
-      padding-left: 1rem;
-      justify-content: center;
-      background-color: black;
+  body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: fantasy;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    justify-content: center;
+    background-color: black;
+  }
 
-      label {
-        color: white;
-      }
-    }
+  h3 {
+    color: #B8860B;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.2;
+  }
 
-    h3 {
-      color: #B8860B;
-      font-size: 3rem;
-      margin-bottom: 2rem;
-      text-align: center;
-      line-height: 1.2;
-    }
+  form {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
 
-    input {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 2rem;
-      align-items: center;
-      width: 100%;
-      padding: 8px;
-      border-radius: 6px;
-    }
+  label {
+    color: white;
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
 
-    textarea {
-      width: 100%;
-      max-width: 400px;
-      padding: 10px;
-      margin-bottom: 10px;
-      box-sizing: border-box;
-      display: block;
-    }
+  input {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+  }
 
-    p {
-      color: red;
-    }
+  .error-message {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: red;
+  }
 
-    .error-message {
-      font-size: 1rem;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
+  .input-enviar {
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #B8860B;
+    cursor: pointer;
+    color: white;
+  }
 
-    a {
-      background-color: white;
-      align-items: center;
-      width: 100%;
-      display: block;
-      text-align: center;
-      color: black;
-    }
+  .input-enviar:hover {
+    background-color: #B8860B;
+    color: black;
+    cursor: pointer;
+  }
 
+  .div-btn-voltar {
+    text-align: center;
+  }
 
-    .div-btn-voltar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  .btn-voltar {
+    background-color: #B8860B;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #B8860B;
+    cursor: pointer;
+    margin: 20px;
+  }
 
-    }
+  .btn-voltar a {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+  }
 
-    .btn-voltar {
-      background-color: #B8860B;
-      padding: 8px;
-      border-radius: 8px;
-      border: 1px solid #B8860B;
-      cursor: pointer;
-      margin: 20px;
-    }
-
-    .btn-voltar a {
-      text-decoration: none;
-      background-color: transparent;
-      color: white;
-    }
-
-    .btn-voltar:hover {
-      background-color: transparent;
-      color: white;
-      cursor: pointer;
-    }
-
-    .input-enviar {
-      background-color: transparent;
-      padding: 8px;
-      border-radius: 8px;
-      border: 1px solid #B8860B;
-      cursor: pointer;
-      color: white;
-    }
-
-    .input-enviar:hover {
-      background-color: #B8860B;
-      color: black;
-      cursor: pointer;
-    }
-  </style>
+  .btn-voltar:hover {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+  }
+</style>
 </head>
 
 <body>

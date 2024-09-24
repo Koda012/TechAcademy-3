@@ -1,42 +1,61 @@
 <main>
-<h3>404: Página Não Encontrada</h3>
+  <div class="error">
+    <h3>404: Página Não Encontrada</h3>
 
-<p><strong>Narrador:</strong></p>
-<p>Você acorda em uma página fria e vazia, sem muitas lembranças de como chegou aqui. No chão digital, há um bilhete misterioso.</p>
+    <p class="sub-paragrafo">Narrador:</p>
+    <p>Você acorda em uma página fria e vazia, sem muitas lembranças de como chegou aqui. No chão digital, há um bilhete misterioso.</p>
 
-<p><strong>Comandos disponíveis:</strong></p>
-<ul>
-  <li>PEGAR BILHETE</li>
-  <li>OLHAR AO REDOR</li>
-  <li>TENTAR SAIR</li>
-</ul>
+    <p class="sub-paragrafo">Comandos disponíveis:</p>
 
-<p><strong>Jogador digita:</strong> PEGAR BILHETE</p>
-
-<p><strong>Narrador:</strong></p>
-<p>Você abre o bilhete e lê: "Se você está vendo isto, algo deu errado. A página que procura está escondida onde o código se perde."</p>
-
-<p><strong>Comandos disponíveis:</strong></p>
-<ul>
-  <li>OLHAR AO REDOR</li>
-  <li>PROCURAR NOVO CAMINHO</li>
-  <li>VOLTAR AO INÍCIO</li>
-</ul>
-
-<p><strong>Jogador digita:</strong> OLHAR AO REDOR</p>
-
-<p><strong>Narrador:</strong></p>
-<p>Você está em um canto da internet, sem janelas, exceto por uma pequena esperança de que possa encontrar o caminho certo. Tudo parece em branco, exceto por um botão que leva à página inicial.</p>
-
-<p><strong>Comandos disponíveis:</strong></p>
-<ul>
-  <li>CLICAR NO BOTÃO INICIAL</li>
-  <li>PROCURAR MAIS</li>
-</ul>
-
-<p><strong>Jogador digita:</strong> CLICAR NO BOTÃO INICIAL</p>
-
-<p><strong>Narrador:</strong></p>
-<p>Você aperta o botão e sente que está voltando ao começo. Talvez, dessa vez, a chave para o conteúdo certo esteja por lá.</p>
+    <div class="btn-erro">
+      <button><a href="home">Pagina Inicial</a></button>
+      <button><a href="game">Ir para o Jogo</a></button>
+      <button><a href="membros">Ir para Membros</a></button>
+    </div>
+  </div>
 
 </main>
+
+<style>
+  .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  h3 {
+    color: #B8860B;
+    font-weight: 200;
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .sub-paragrafo {
+    color: #B8860B;
+  }
+  .btn-erro{
+    button{
+      background-color: #B8860B;
+      color: white;
+      font-size: 20px;
+      padding: 8px;
+      border-radius: 6px;
+      border: none;
+      margin: 20px;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+    button:hover{
+      background-color: transparent;
+      border: 1px solid #B8860B;
+    }
+  }
+</style>

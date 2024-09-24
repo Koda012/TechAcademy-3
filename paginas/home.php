@@ -16,8 +16,10 @@
       <i class="fa-solid fa-bars"></i>
       </button>
       <ul class="dropdown-menu">
+      <?php if (!isset($_SESSION['logado']) || $_SESSION['logado'] !== true) : ?>
         <li><a class="dropdown-item" href="login">Login</a></li>
         <li><a class="dropdown-item" href="registro">Registra-se</a></li>
+        <?php endif; ?>
         <li><a class="dropdown-item" href="Formulario">Entre em contato</a></li>
       </ul>
     </div>

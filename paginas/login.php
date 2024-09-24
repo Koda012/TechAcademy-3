@@ -90,6 +90,7 @@
       cursor: pointer;
     }
     .input-entrar{
+      width: 100%;
       background-color: transparent;
       padding: 8px;
       border-radius: 8px;
@@ -102,6 +103,9 @@
       color: black;
       cursor: pointer;
     }
+    footer {
+    display: none;
+  }
   </style>
 
 </head>
