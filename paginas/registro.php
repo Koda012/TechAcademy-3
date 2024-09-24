@@ -56,10 +56,12 @@ if (isset($_POST['submit'])) {
     }
 
     input {
-      margin-bottom: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
       align-items: center;
       width: 100%;
-      display: block;
       padding: 8px;
       border-radius: 6px;
     }
@@ -93,12 +95,13 @@ if (isset($_POST['submit'])) {
     }
 
 
-    .div-btn-voltar{
+    .div-btn-voltar {
       display: flex;
       justify-content: center;
       align-items: center;
 
     }
+
     .btn-voltar {
       background-color: #B8860B;
       padding: 8px;
@@ -113,13 +116,14 @@ if (isset($_POST['submit'])) {
       background-color: transparent;
       color: white;
     }
-    .btn-voltar:hover{
+
+    .btn-voltar:hover {
       background-color: transparent;
       color: white;
       cursor: pointer;
     }
 
-    .input-enviar{
+    .input-enviar {
       background-color: transparent;
       padding: 8px;
       border-radius: 8px;
@@ -127,7 +131,8 @@ if (isset($_POST['submit'])) {
       cursor: pointer;
       color: white;
     }
-    .input-enviar:hover{
+
+    .input-enviar:hover {
       background-color: #B8860B;
       color: black;
       cursor: pointer;
@@ -157,7 +162,9 @@ if (isset($_POST['submit'])) {
         <?php if (isset($_GET['error']) && $_GET['error'] == 1): ?>
           <p class="error-message">usuario já existente.<br> Tente novamente.</p>
         <?php endif; ?>
-        <input class="input-enviar" type="submit" name='submit' value="Enviar">
+        <div class="div-enviar-input">
+          <input class="input-enviar" type="submit" name='submit'>
+        </div>
     </form>
     <div class="div-btn-voltar">
       <button class="btn-voltar"><a class='voltar' href="../home">Voltar</a></button>
