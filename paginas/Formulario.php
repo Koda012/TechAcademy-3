@@ -69,15 +69,15 @@
 <div class="formulario">
     <main>
         <h1>CONTE MAIS</h1>
-            <form action="https://formsubmit.co/016d8d441cb6320df0c2627c712e145e" method="POST">
+            <form action="https://formsubmit.co/0b2a2f08ebd7746c2f590da84d3f547a" method="POST">
                 Seu Nome:<br/>
-                <input name = "nome" type="text" placeholder="Digite seu Nome" required/>
+                <input type="text" placeholder="Digite seu Nome" required/>
                 Seu email:<br/>
-                <input name = "email" type="email" placeholder="Digite seu Email" required/>
+                <input type="email" placeholder="Digite seu Email" required/>
                 Sua mensagem:<br/>
-                <textarea name="mensagem" rows="4" cols="100%" placeholder="Digite sua mensagem"></textarea>
-                <input type="hidden" name="_captcha" value="true">
-                <input class="input-enviar" type="submit" value="enviar">
+                <textarea rows="4" cols="100%" placeholder="Digite sua mensagem"></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="submit" value="enviar">
                 
             </form>
     </main>
